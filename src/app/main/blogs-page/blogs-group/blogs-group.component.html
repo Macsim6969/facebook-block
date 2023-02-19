@@ -1,8 +1,12 @@
-<div *ngIf="blogs.length; else loading">
-  <div *ngFor="let blog of blogs">
-    <h1>{{blog.name}}</h1>
-    <small>Type: {{blog.type}}</small>
-    <nav>Read more</nav>
+<div class="blog" *ngIf="blogs.length; else loading">
+  <div class="blog_inner" *ngFor="let blog of blogs">
+    <div class="blog_inner_data">
+      <h1 class="blog_inner_log">{{blog.name}}</h1>
+      <small>15.02.2023</small>
+    </div>
+
+    <small class="blog_small">Type: {{blog.type}}</small>
+    <a [routerLink]="['/blogs', 'groups', blog.id]" class="blog_link">Read more</a>
   </div>
 </div>
 
