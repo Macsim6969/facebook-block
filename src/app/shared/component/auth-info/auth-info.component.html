@@ -1,0 +1,18 @@
+<div class="auth-info">
+  <nav *ngIf="user" class="auth-info-me">
+    <img [src]="user.img" alt="Me">
+    <span>{{user.name}}</span>
+  </nav>
+  <nav *ngIf="!user" class="auth-info-me">
+    <img src="./assets/avatar.png" alt="Me">
+    <span>Your name</span>
+  </nav>
+  <nav class="auth-info-me">
+    <img src="./assets/friends.png" alt="Me">
+    <span>Find friends</span>
+  </nav>
+  <nav class="auth-info-me">
+    <img src="./assets/multiple-users-silhouette.png" alt="Me">
+    <span>Groups</span>
+  </nav>
+</div>

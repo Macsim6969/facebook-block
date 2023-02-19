@@ -1,0 +1,11 @@
+<div *ngIf="blogs.length; else loading">
+  <div *ngFor="let blog of blogs">
+    <h1>{{blog.name}}</h1>
+    <small>Type: {{blog.type}}</small>
+    <nav>Read more</nav>
+  </div>
+</div>
+
+<ng-template #loading>
+  <img class="loading" src="./assets/spinner.gif" alt="Loading">
+</ng-template>

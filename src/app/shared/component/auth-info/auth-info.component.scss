@@ -1,0 +1,22 @@
+.auth-info{
+  padding-left: 15px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  .auth-info-me{
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+      width: 26px;
+      height: 26px;
+      margin-right: 15px;
+    }
+  }
+  .auth-info-me:hover{
+    background-color: #b0b0b0;
+    border-radius: 7px;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="people" *ngIf="peoples.length;else loading">
+  <div class="people_block" *ngFor="let people of peoples">
+    <nav class="people_image">
+      <img class="people_img" src="{{people.img}}" alt="{{people.name}}">
+      <nav *ngIf="people.isOnline" class="people_online"></nav>
+    </nav>
+    <p class="people_name">{{people.name}}</p>
+    <button class="people_add" [disabled]="disable" (click)="add(people)" *ngIf="!people.isFriend;else trueFriend">Add</button>
+    <ng-template #trueFriend>
+      <button class="people_add" [disabled]="disable" (click)="delete(people)">Delete</button>
+    </ng-template>
+  </div>
+</div>
+
+<ng-template #loading>
+  <img class="loading" src="./assets/spinner.gif" alt="loading">
+</ng-template>

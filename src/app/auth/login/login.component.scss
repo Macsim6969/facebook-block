@@ -1,0 +1,28 @@
+div{
+  background-color: #f3f3f3;
+  .login {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    .login_inner {
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .login_inner_lf {
+        flex-basis: 50%;
+        .login_inner_lf_log{
+          font-size: 1.8rem;
+        }
+        .login_inner_lf_text{
+          font-size: 1.2rem;
+        }
+      }
+
+      .login_inner_rg {
+        flex-basis: 50%;
+      }
+    }
+  }
+}

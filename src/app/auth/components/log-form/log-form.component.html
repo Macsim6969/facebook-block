@@ -1,0 +1,21 @@
+<form class="form" action="" [formGroup]="form" (ngSubmit)="addForm()">
+
+  <div *ngIf="message">
+    {{message}}
+  </div>
+  <input class="form_input" type="email" placeholder="max@gmail.com" formControlName="email">
+  <div class="form_error" *ngIf="form.get('email').invalid && form.get('email').touched">
+    <small *ngIf="form.get('email').errors.required">*Login input shout not be empty</small>
+    <small *ngIf="form.get('email').errors.email">*Login input has inorrect value</small>
+  </div>
+
+  <input class="form_input" type="password" placeholder="facebook" formControlName="password">
+  <div class="form_error" *ngIf="form.get('password').invalid && form.get('password').touched">
+    <small *ngIf="form.get('password').errors.required">*Password input shout not be empty</small>
+    <small *ngIf="form.get('password').errors.minlength">*Password input has short value</small>
+  </div>
+
+  <button type="submit" [disabled]="form.invalid && form.untouched || submitted" class="form_log">Log in</button>
+  <div class="brd"></div>
+  <button class="form_lognew">Create new account</button>
+</form>

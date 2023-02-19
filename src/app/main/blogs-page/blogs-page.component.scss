@@ -1,0 +1,41 @@
+.blog{
+  margin: 0 35px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  animation: open 0.7s ;
+  .blog_log{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .blog_log_choice{
+    position: fixed;
+    background-color: white;
+    left: 37%;
+    width: 35%;
+    justify-content: space-between;
+    box-shadow: 3px 10px 15px #c5bdbd;
+    display: flex;
+    flex-direction: row;
+    .blog_log_choice_type{
+      padding: 5px 15px;
+      cursor: pointer;
+    }
+    .blog_log_choice_type:hover{
+      background-color: #7c7b7b;
+      transition: all 0.8s ease;
+    }
+  }
+}
+
+@keyframes open {
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

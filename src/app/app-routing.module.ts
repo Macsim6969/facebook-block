@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {MainComponent} from "./main/main.component";
+import {LogGuards} from "./auth/service/log.guards";
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', loadChildren: () => import('./main/main.module').then(comp => comp.MainModule), canActivate: [LogGuards]},
+  {path: 'auth', loadChildren: () => import('./auth/auth.module').then(comp => comp.AuthModule)}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
