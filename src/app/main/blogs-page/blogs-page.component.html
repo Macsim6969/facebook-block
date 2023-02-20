@@ -1,12 +1,13 @@
 <div class="blog">
-  <h1 class="blog_log">Choice some groups</h1>
   <div class="blog_log_choice">
-    <nav class="blog_log_choice_type" [routerLink]="['/blogs']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">All</nav>
-    <nav class="blog_log_choice_type" [routerLink]="['groups']" routerLinkActive="active">Blog</nav>
+    <nav class="blog_log_choice_type" [routerLink]="['content']" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">Content</nav>
     <nav class="blog_log_choice_type" [routerLink]="['photos']" routerLinkActive="active">Photos</nav>
     <nav class="blog_log_choice_type" [routerLink]="['people']" routerLinkActive="active">Find Friends</nav>
+    <nav class="blog_log_choice_type" [routerLink]="['music']" routerLinkActive="active">Music</nav>
   </div>
+  <div class="blog_content">
     <router-outlet></router-outlet>
+  </div>
 </div>
 
 

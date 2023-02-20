@@ -1,5 +1,5 @@
 <div class="auth-info">
-  <nav *ngIf="user" class="auth-info-me">
+  <nav [routerLink]="['/user']" *ngIf="user" class="auth-info-me">
     <img [src]="user.img" alt="Me">
     <span>{{user.name}}</span>
   </nav>

@@ -1,0 +1,27 @@
+.blog_info{
+  width: 974px;
+  margin: 0 auto;
+  .blog_info_inner{
+    display: flex;
+    flex-direction: column;
+    .blog_info_inner_main{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 10px;
+      h1{
+        font-size: 1.4rem;
+      }
+      span{
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+.loading{
+  position: absolute;
+  z-index: -5;
+  top: 250px;
+  left: 45%;
+}

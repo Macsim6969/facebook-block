@@ -1,5 +1,6 @@
 import {Component, OnChanges, OnInit} from '@angular/core';
 import {BlogsService} from "../../shared/services/blogs.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-blogs-page',
@@ -8,10 +9,11 @@ import {BlogsService} from "../../shared/services/blogs.service";
 })
 export class BlogsPageComponent implements OnInit{
   allBlogs = []
-  constructor(private blogService: BlogsService) {}
+  constructor(private blogService: BlogsService, private router: Router) {}
 
   ngOnInit() {
     this.getBLogs()
+    this.router.navigate(['/blogs','content'])
   }
 
   getBLogs(){

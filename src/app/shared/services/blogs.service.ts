@@ -23,8 +23,7 @@ export class BlogsService implements OnInit {
         map((blog: BLogs) => {
           return {
             ...blog,
-            id,
-            date: new Date(blog.date)
+            id
           }
         })
       )

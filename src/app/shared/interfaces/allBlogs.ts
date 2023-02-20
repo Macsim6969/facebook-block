@@ -1,8 +1,8 @@
 export interface BLogs {
-  name: string
-  type: string
-  id? : number
-  date?: Date
+  userId: number
+  title: string
+  id : number
+  body: string
 }
 
 export interface Photos {

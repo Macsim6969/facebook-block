@@ -10,11 +10,13 @@ import {AuthInfoComponent} from "../shared/component/auth-info/auth-info.compone
 import {HttpClientModule} from "@angular/common/http";
 import {FilterPipe} from "../shared/pipe/filter.pipe";
 import {FormsModule} from "@angular/forms";
+import {UserAccountComponent} from "./user-account/user-account.component";
 
 const routes: Routes = [
   {path: '', component: MainComponent, children: [
       {path: '', component: HomePageComponent},
-      {path: 'blogs', loadChildren: () => import('./blogs-page/blog.module').then(m => m.BlogModule) }
+      {path: 'blogs', loadChildren: () => import('./blogs-page/blog.module').then(m => m.BlogModule) },
+      {path: 'user', component: UserAccountComponent}
     ]}
 ]
 @NgModule({
@@ -25,7 +27,8 @@ const routes: Routes = [
     ContactsComponent,
     AuthInfoComponent,
     MainContentComponent,
-    FilterPipe
+    FilterPipe,
+    UserAccountComponent
   ],
   imports: [
     CommonModule,

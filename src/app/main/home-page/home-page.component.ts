@@ -20,7 +20,6 @@ export class HomePageComponent implements OnInit{
       this.allUserInfo = res
         if(res.contacts){
           const friends = Object.values(res.contacts).flat()
-          console.log(friends)
           this.userContacts = friends
         }
     })
