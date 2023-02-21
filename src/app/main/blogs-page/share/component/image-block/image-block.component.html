@@ -1,5 +1,8 @@
 <div class="image">
-  <div (click)="close(false)" class="close">&#10006;</div>
+  <div class="image_block">
+    <span class="image_download"><a href="{{imageSrc}}" [download]="imageSrc"><img src="./assets/icons8-download-24.png" alt="Download"></a></span>
+    <div (click)="close(false)" class="close">&#10006;</div>
+  </div>
   <nav class="image_inner">
     <img class="image_active" src="{{imageSrc}}" alt="">
   </nav>

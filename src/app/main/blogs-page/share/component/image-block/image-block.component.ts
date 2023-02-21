@@ -13,5 +13,6 @@ export class ImageBlockComponent {
 
   close(value: boolean) {
     this.closesImage.emit(value)
+    document.body.style.overflow = ''
   }
 }

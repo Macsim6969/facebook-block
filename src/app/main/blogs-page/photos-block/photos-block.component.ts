@@ -30,6 +30,7 @@ export class PhotosBlockComponent implements OnInit{
   }
   showImg(img: string): void {
     this.showImage = img
+    document.body.style.overflow = 'hidden'
     this.closeImage = true
   }
 }

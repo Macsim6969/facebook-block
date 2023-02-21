@@ -16,7 +16,9 @@ const routes: Routes = [
   {path: '', component: MainComponent, children: [
       {path: '', component: HomePageComponent},
       {path: 'blogs', loadChildren: () => import('./blogs-page/blog.module').then(m => m.BlogModule) },
-      {path: 'user', component: UserAccountComponent}
+      {path: 'user', component: UserAccountComponent, children: [
+          {}
+        ]}
     ]}
 ]
 @NgModule({

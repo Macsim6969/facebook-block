@@ -1,0 +1,108 @@
+.user {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  .user_inner {
+    display: flex;
+    flex-direction: column;
+
+    .user_inner_head {
+      .head_img {
+        position: relative;
+        max-width: 1280px;
+        height: 360px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .head_img_me {
+        position: absolute;
+        bottom: -18%;
+        left: 43%;
+
+        img {
+          width: 170px;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+
+      .user_info {
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+
+        .user_info_txt {
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+
+        .user_info_inner {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .user_info_friend {
+            cursor: pointer;
+            .user_info_friend_sircle {
+              display: flex;
+              flex-direction: row;
+
+              .sircle_info {
+                margin-left: -5px;
+
+                img {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+          .user_info_inner_edit{
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-style: italic;
+            padding: 9px;
+            border-radius: 5px;
+            background-color: #7c7b7b;
+            color: white;
+            img{
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      hr{
+        margin-bottom: 10px;
+      }
+      .user_navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        .user_navbar_inner{
+          cursor: pointer;
+          padding: 7px;
+        }
+        .user_navbar_inner:hover{
+          background-color: #8a8989;
+          border-radius: 12px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+
+.loading {
+  z-index: -5;
+  position: absolute;
+  top: 250px;
+  left: 45%;
+}

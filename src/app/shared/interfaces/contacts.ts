@@ -7,6 +7,7 @@ export  interface Contacts {
 }
 export interface Users {
   img: string
+  imgCover: string
   name: string
   id: string
   contacts: Contacts[]
