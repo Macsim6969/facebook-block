@@ -11,7 +11,7 @@
       <div class="user_info">
         <nav class="user_info_txt">{{ourInfo.name}}</nav>
         <div class="user_info_inner">
-          <div class="user_info_friend">
+          <div class="user_info_friend" [routerLink]="['/user', 'my-friends']">
             <nav class="user_info_friend_inner">My friends: {{myContacts.length}}</nav>
             <div class="user_info_friend_sircle">
               <nav class="sircle_info" *ngFor="let friends of myContacts">
@@ -27,13 +27,14 @@
       </div>
       <hr>
       <div class="user_navbar">
-        <nav class="user_navbar_inner active">My Publocation</nav>
-        <nav class="user_navbar_inner">About Me</nav>
-        <nav class="user_navbar_inner">My Friends</nav>
-        <nav class="user_navbar_inner">Photos</nav>
-        <nav class="user_navbar_inner">Music</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user']" [routerLinkActiveOptions]="{exact: true}">My Publocation</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'about']">About Me</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends']">My Friends</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'photos']">Photos</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'music']">Music</nav>
       </div>
     </div>
+    <div class="user_content"><router-outlet></router-outlet></div>
   </div>
 </div>
 

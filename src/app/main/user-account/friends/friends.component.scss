@@ -1,0 +1,110 @@
+.friends{
+  display: flex;
+  flex-direction: column;
+  .friends_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .friends_head_log{
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .friends_head_search{
+      background-color: #d5d4d4;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img{
+        background-blend-mode: color-burn;
+        width: 26px;
+        padding: 0 10px;
+      }
+      input{
+        outline: none;
+        border: 0;
+        background-color: #d5d4d4;
+        padding: 8px;
+        border-radius: 15px;
+      }
+    }
+  }
+  .friends_main{
+    display: flex;
+    flex-direction: column;
+    .friends_main_navbar{
+      width: 13%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+      justify-content: space-between;
+      .friends_main_navbar_inner{
+        padding: 9px;
+      }
+    }
+    .friends_main_people{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .friends_main_people_inner{
+        flex-basis: 45%;
+        border: 1px solid #adadad;
+        padding: 15px 12px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        .people_inner_info{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          img{
+            cursor: pointer;
+            border-radius: 5px;
+            padding-right: 15px;
+          }
+          h4{
+            cursor: pointer;
+          }
+        }
+        .people_inner_dop{
+          img{
+            width: 20px;
+            cursor: pointer;
+            padding:10px;
+            border-radius: 30px;
+          }
+          img:hover{
+            background-color: #adadad;
+          }
+        }
+        .dop_inner{
+          border: 1px solid gray;
+          top: 65px;
+          background: white;
+          padding: 15px;
+          position: absolute;
+          z-index: 99;
+          right: -115px;
+    }
+  }
+}
+}
+
+}
+
+.active{
+  border-bottom: 1px solid black;
+}
+.loading{
+z-index: -5;
+position: absolute;
+top: 250px;
+left: 45%;
+}
+

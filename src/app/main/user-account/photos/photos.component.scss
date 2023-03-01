@@ -1,0 +1,14 @@
+.photos {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.photos_gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  nav {
+  padding: 5px;
+  }
+}
