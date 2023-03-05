@@ -6,35 +6,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 50%;
     .friends_head_log{
       font-size: 1.5rem;
       font-weight: 600;
     }
-    .friends_head_search{
-      background-color: #d5d4d4;
-      border-radius: 15px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      img{
-        background-blend-mode: color-burn;
-        width: 26px;
-        padding: 0 10px;
-      }
-      input{
-        outline: none;
-        border: 0;
-        background-color: #d5d4d4;
-        padding: 8px;
-        border-radius: 15px;
-      }
-    }
-  }
-  .friends_main{
-    display: flex;
-    flex-direction: column;
     .friends_main_navbar{
-      width: 13%;
       display: flex;
       flex-direction: row;
       margin-bottom: 15px;
@@ -44,6 +21,11 @@
         cursor: pointer;
       }
     }
+  }
+  .friends_main{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
     .friends_main_people {
       display: flex;
       justify-content: center;

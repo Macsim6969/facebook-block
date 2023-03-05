@@ -1,16 +1,12 @@
 <div class="friends" *ngIf="friends;else loading">
   <div class="friends_head">
     <h3 class="friends_head_log">Friends</h3>
-    <div class="friends_head_search">
-      <img src="./assets/search.svg" alt="search">
-      <input placeholder="search" type="text">
-    </div>
-  </div>
-  <div class="friends_main">
     <div class="friends_main_navbar">
       <nav class="friends_main_navbar_inner" [routerLink]="['/user', 'my-friends']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">All</nav>
       <nav class="friends_main_navbar_inner" [routerLink]="['/user', 'my-friends', 'favourites']" routerLinkActive="active">Favorites</nav>
     </div>
+  </div>
+  <div class="friends_main">
     <div class="friends_main_people"><router-outlet></router-outlet></div>
   </div>
 </div>

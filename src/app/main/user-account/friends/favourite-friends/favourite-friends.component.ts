@@ -13,6 +13,7 @@ export class FavouriteFriendsComponent implements OnInit{
   showMore: boolean = false
   contacts: Contacts[]
   favourite: boolean =false
+  search: string = ''
   constructor(private mainService: MainService, private contactService: ContactService) {}
 
   ngOnInit() {

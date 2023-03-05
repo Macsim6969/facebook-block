@@ -1,5 +1,9 @@
+<div class="friends_head_search">
+  <img src="./assets/search.svg" alt="search">
+  <input placeholder="search" type="text" [(ngModel)]="search">
+</div>
 <div class="all">
-  <div class="friends_main_people_inner" *ngFor="let friend of friends">
+  <div class="friends_main_people_inner" *ngFor="let friend of friends|filter: search">
     <div class="people_inner_info">
       <img [ngClass]="friend.favourite == true ? 'favourite': ''" style="width: 68px; height: 68px" src="{{friend.img}}" alt="{{friend.name}}">
       <h4>{{friend.name}}

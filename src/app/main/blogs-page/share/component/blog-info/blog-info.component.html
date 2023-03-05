@@ -1,5 +1,5 @@
 <div class="blog_info" *ngIf="blog; else loading">
-  <div [routerLink]="['/blogs', 'groups']">Back</div>
+  <div [routerLink]="['/blogs', 'content']">Back</div>
   <div class="blog_info_inner">
     <div class="blog_info_inner_main">
       <h1>{{blog.title |titlecase}}</h1>

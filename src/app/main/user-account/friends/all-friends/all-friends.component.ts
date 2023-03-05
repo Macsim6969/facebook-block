@@ -15,7 +15,7 @@ export class AllFriendsComponent {
   showMore: boolean = false
   friends: Contacts[]
   favourite: boolean =false
-
+search: string =''
   constructor(private mainService: MainService, private userService: UserService, private contactService: ContactService) {
   }
   ngOnInit() {

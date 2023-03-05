@@ -21,7 +21,6 @@ export class BlogInfoComponent implements OnInit {
       switchMap((params: Params) => {
         return this.blogService.getById(params['id'])
       })).subscribe((blog: BLogs) =>{
-        console.log(blog)
           this.blog = blog
           this.loading = false
     })

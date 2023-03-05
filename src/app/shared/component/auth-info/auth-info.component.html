@@ -7,7 +7,7 @@
     <img src="./assets/avatar.png" alt="Me">
     <span>Your name</span>
   </nav>
-  <nav [routerLink]="['/blogs','people']" class="auth-info-me">
+  <nav (click)="routerToFriend()" class="auth-info-me">
     <img src="./assets/friends.png" alt="Me">
     <span>Find friends</span>
   </nav>
