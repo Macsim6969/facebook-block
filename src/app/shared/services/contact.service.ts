@@ -13,11 +13,15 @@ export class ContactService {
     return this.http.patch<People>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/contacts/${people.id}.json`, people)
   }
 
-  changePeopleToFriend(people: People): Observable<People>{
+  changePeopleToFriend(people: Contacts): Observable<People>{
     return this.http.patch<People>(`https://facebook-d95ea-default-rtdb.firebaseio.com/peoples/${people.id}.json`, people)
   }
 
-  deleteFriend(peple: People): Observable<any>{
+  changePeopleToFavourites(people: Contacts): Observable<People>{
+    return this.http.patch<People>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/contacts/${people.id}.json`, people)
+  }
+
+  deleteFriend(peple: Contacts): Observable<any>{
     return this.http.delete(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/contacts/${peple.id}.json`)
   }
 }

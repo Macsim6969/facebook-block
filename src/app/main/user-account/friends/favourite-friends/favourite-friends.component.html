@@ -1,1 +1,18 @@
-<p>favourite-friends works!</p>
+<div class="all">
+  <div class="friends_main_people_inner" *ngFor="let friend of contacts">
+    <div class="people_inner_info">
+      <img [ngClass]="friend.favourite == true ? 'favourite': ''" style="width: 68px; height: 68px" src="{{friend.img}}" alt="{{friend.name}}">
+      <h4>{{friend.name}}
+      </h4>
+    </div>
+    <div class="people_inner_dop">
+      <img src="./assets/more.png" alt="more" (click)="show(friend.id ,showMore = !showMore)">
+    </div>
+    <div *ngIf="friend.id === showId && showMore" class="dop_inner">
+      <nav (click)="remove(friend)">Delete</nav>
+      <nav (click)="unFavourites(friend)">Unfavourites</nav>
+
+    </div>
+  </div>
+</div>
+

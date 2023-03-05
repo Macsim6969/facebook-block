@@ -12,7 +12,8 @@
         <nav class="user_info_txt">{{ourInfo.name}}</nav>
         <div class="user_info_inner">
           <div class="user_info_friend" [routerLink]="['/user', 'my-friends']">
-            <nav class="user_info_friend_inner">My friends: {{myContacts.length}}</nav>
+            <nav class="user_info_friend_inner" *ngIf="myContacts;else contactZero">My friends: {{myContacts.length}}</nav>
+            <ng-template #contactZero><nav class="user_info_friend_inner" *ngIf="myContacts;else contactZero">My friends: 0</nav></ng-template>
             <div class="user_info_friend_sircle">
               <nav class="sircle_info" *ngFor="let friends of myContacts">
                 <img src="{{friends.img}}" alt="">

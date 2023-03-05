@@ -3,6 +3,8 @@ export  interface Contacts {
   name: string
   isOnline: boolean
   isFriend: boolean
+  favourite: boolean
+
   id: string
 }
 export interface Users {

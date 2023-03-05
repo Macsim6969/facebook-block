@@ -1,15 +1,18 @@
-<div class="friends_main_people_inner" *ngFor="let friend of friends">
-  <div class="people_inner_info">
-    <img style="width: 68px; height: 68px" src="{{friend.img}}" alt="{{friend.name}}">
-    <h4>{{friend.name}}
-    </h4>
-  </div>
-  <div class="people_inner_dop">
-    <img src="./assets/more.png" alt="more" (click)="show(friend.id ,showMore = !showMore)">
-  </div>
-  <div *ngIf="friend.id === showId && showMore" class="dop_inner">
-    <nav (click)="friend.id">Delete</nav>
-    <nav>To favourites</nav>
+<div class="all">
+  <div class="friends_main_people_inner" *ngFor="let friend of friends">
+    <div class="people_inner_info">
+      <img [ngClass]="friend.favourite == true ? 'favourite': ''" style="width: 68px; height: 68px" src="{{friend.img}}" alt="{{friend.name}}">
+      <h4>{{friend.name}}
+      </h4>
+    </div>
+    <div class="people_inner_dop">
+      <img src="./assets/more.png" alt="more" (click)="show(friend.id ,showMore = !showMore)">
+    </div>
+    <div *ngIf="friend.id === showId && showMore" class="dop_inner">
+      <nav (click)="remove(friend)">Delete</nav>
+      <nav (click)="toFavourite(friend)" *ngIf="friend.favourite == false; else unFavourite">To favourites</nav>
+      <ng-template #unFavourite><nav (click)="unFavourites(friend)">Unfavourites</nav></ng-template>
+    </div>
   </div>
 </div>
 

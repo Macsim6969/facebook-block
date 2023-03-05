@@ -41,62 +41,16 @@
       justify-content: space-between;
       .friends_main_navbar_inner{
         padding: 9px;
+        cursor: pointer;
       }
     }
-    .friends_main_people{
+    .friends_main_people {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      .friends_main_people_inner{
-        flex-basis: 45%;
-        border: 1px solid #adadad;
-        padding: 15px 12px;
-        margin-bottom: 20px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: relative;
-        justify-content: space-between;
-        .people_inner_info{
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          img{
-            cursor: pointer;
-            border-radius: 5px;
-            padding-right: 15px;
-          }
-          h4{
-            cursor: pointer;
-          }
-        }
-        .people_inner_dop{
-          img{
-            width: 20px;
-            cursor: pointer;
-            padding:10px;
-            border-radius: 30px;
-          }
-          img:hover{
-            background-color: #adadad;
-          }
-        }
-        .dop_inner{
-          border: 1px solid gray;
-          top: 65px;
-          background: white;
-          padding: 15px;
-          position: absolute;
-          z-index: 99;
-          right: -115px;
+      justify-content: center;
     }
   }
 }
-}
 
-}
 
 .active{
   border-bottom: 1px solid black;
