@@ -1,6 +1,14 @@
-<h3 class="photos">Gallery</h3>
-  <div class="photos_gallery">
-  <nav *ngFor="let photo of gallery">
-    <img src="{{photo.img}}" alt="{{photo.id}}">
+<div class="photos" *ngIf="photos.length;else loading">
+  <nav class="photos_blocs" *ngFor="let photo of photos">
+    <img [src]="photo.img" (click)="showImg(photo.img)">
   </nav>
 </div>
+
+<ng-template #loading>
+  <img class="loading" src="./assets/spinner.gif" alt="loading">
+</ng-template>
+
+
+<!--<div *ngIf="closeImage">-->
+<!--  <app-image-block [imageSrc]="showImage" (closesImage)="closesImage($event)"></app-image-block>-->
+<!--</div>-->

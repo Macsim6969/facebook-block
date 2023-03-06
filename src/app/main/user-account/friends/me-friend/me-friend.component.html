@@ -1,0 +1,38 @@
+<div class="about-friend" *ngIf="user">
+  <div class="user_inner">
+    <div class="user_inner_head">
+      <nav class="head_img">
+        <img src="{{user.imgCover}}" alt="">
+        <div class="head_img_me">
+          <img src="{{user.img}}" alt="{{user.name}}">
+        </div>
+      </nav>
+
+      <div class="user_info">
+        <nav class="user_info_back" [routerLink]="['/user', 'my-friends']">&#8592; Back</nav>
+        <nav class="user_info_txt">{{user.name}}</nav>
+        <div class="user_info_inner">
+          <div class="user_info_friend" [routerLink]="['/user', 'my-friends']">
+            <nav class="user_info_friend_inner" *ngIf="user.friends;else contactZero">My friends: {{user.friends.length}}</nav>
+            <ng-template #contactZero><nav class="user_info_friend_inner">My friends: 0</nav></ng-template>
+            <div class="user_info_friend_sircle">
+              <nav class="sircle_info" *ngFor="let friends of user.friends">
+                <img src="{{friends.img}}" alt="">
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+      <div class="user_navbar">
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id]" [routerLinkActiveOptions]="{exact: true}">My Publocation</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'about']">About Me</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'friends']">My Friends</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'photos']">Photos</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'music']">Music</nav>
+      </div>
+    </div>
+    <div class="user_content"><router-outlet></router-outlet></div>
+  </div>
+</div>

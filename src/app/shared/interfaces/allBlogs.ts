@@ -19,5 +19,5 @@ export interface People{
   name: string
   blogs: BLogs[] | BLogs | null
   favourite: boolean
-  friends: People[] | People | null
+  friends: People[]
 }

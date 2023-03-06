@@ -31,10 +31,11 @@ const routes: Routes = [
     MusicComponent,
     HelpPeopleComponent
   ],
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-    ],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes)
+
+  ],
   exports: [
     RouterModule
   ]

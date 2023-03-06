@@ -32,11 +32,10 @@ const routes: Routes = [
     BlogInfoComponent,
     MusicComponent
   ],
-  exports: [],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    HttpClientModule
+    HttpClientModule,
   ]
 })
 

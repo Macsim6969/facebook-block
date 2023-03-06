@@ -7,7 +7,7 @@
   </nav>
   <div class="contacts">
     <div class="contact" *ngFor="let contact of yourContacts|filter: search" >
-      <div class="contact_inner">
+      <div class="contact_inner" [routerLink]="['/user' ,'my-friends', contact.id]">
         <nav *ngIf="contact.img else imgdefault">
           <img style="width: 32px; height: 32px; border-radius: 15px" [src]="contact.img" [alt]='contact.img'>
         </nav>

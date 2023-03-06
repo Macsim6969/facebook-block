@@ -2,7 +2,7 @@ import {Injectable} from "@angular/core";
 import {Contacts} from "../interfaces/contacts";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {People} from "../interfaces/allBlogs";
+import {People, Photos} from "../interfaces/allBlogs";
 
 @Injectable({providedIn: "root"})
 
@@ -23,5 +23,9 @@ export class ContactService {
 
   deleteFriend(peple: Contacts): Observable<any>{
     return this.http.delete(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/contacts/${peple.id}.json`)
+  }
+
+  getMyPhotos(): Observable<Photos[]>{
+    return this.http.get<Photos[]>('https://facebook-d95ea-default-rtdb.firebaseio.com/user/photos.json')
   }
 }
