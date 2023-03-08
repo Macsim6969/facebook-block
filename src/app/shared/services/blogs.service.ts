@@ -50,12 +50,9 @@ export class BlogsService implements OnInit {
   }
 
   setMePhoto(photo: Photos): Observable<Photos>{
-    return this.http.post<Photos>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/photos.json`, photo )
+    return this.http.patch<Photos>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/photos/${photo.id}.json`, photo )
   }
 
-  deleteMePhoto(photo: Photos): Observable<any>{
-    return this.http.delete(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/photos/${photo.id}.json`)
-  }
 
   setChangePhoto(photo): Observable<Photos>{
     return this.http.patch<Photos>(`https://facebook-d95ea-default-rtdb.firebaseio.com/photos/${photo.id}.json`, photo)

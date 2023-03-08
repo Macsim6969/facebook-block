@@ -21,4 +21,5 @@ export interface People{
   blogs: BLogs[] | BLogs | null
   favourite: boolean
   friends: People[]
+  photos: Photos[]
 }

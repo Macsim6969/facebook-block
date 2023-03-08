@@ -1,3 +1,5 @@
+import {Photos} from "./allBlogs";
+
 export  interface Contacts {
   img: string
   name: string
@@ -13,4 +15,5 @@ export interface Users {
   name: string
   id: string
   contacts: Contacts[]
+  photos: Photos[]
 }

@@ -25,7 +25,7 @@ ngOnInit() {
   }
 
   plusMe(image: Photos): void {
-    const newImage: Photos = {
+    const newImage = {
       ...image,
       my: true
     }
@@ -33,6 +33,7 @@ ngOnInit() {
     this.blogService.setChangePhoto(newImage).subscribe(res =>{
       this.plusImage.emit(false)
     })
+    document.body.style.overflow = ''
   }
 
 }

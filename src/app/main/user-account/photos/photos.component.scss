@@ -21,11 +21,49 @@
   }
   .photos_inner{
     display: flex;
-    justify-content: center;
     height: 400px;
     img{
       width: 100%;
       height: auto;
+    }
+    .photo_inner_menu{
+      position: relative;
+      right: 5%;
+      top: 4%;
+      cursor: pointer;
+      height: 28px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #e5e5e5;
+      img{
+        width: 28px;
+        height: auto;
+      }
+    }
+    .photo_inner_menu_dop{
+      position: relative;
+      right: 11%;
+      top: 17%;
+      height: 90px;
+      background-color: #e5e5e5;
+      padding: 8px;
+      border-radius: 20px;
+      .dop_navbar{
+        font-size: 1.2rem;
+        color: white;
+        padding: 5px;
+        cursor: pointer;
+        margin-bottom: 3px;
+        a{
+          text-transform: none;
+          text-decoration: none;
+          font-size: 1.2rem;
+          color: white;
+        }
+      }
+      .dop_navbar:hover{
+        background-color: #858181;
+      }
     }
   }
   .photo_inner_basic{

@@ -1,6 +1,13 @@
 <div class="all_photo">
   <div *ngIf="showImage;else staticImage" class="photos_inner">
     <img src="{{showImage}}" alt="">
+    <div class="photo_inner_menu" (click)="showMoreInfo()">
+      <img src="./assets/menu.png" alt="Menu">
+    </div>
+    <div class="photo_inner_menu_dop" *ngIf="showMore">
+      <nav class="dop_navbar"><a href="{{showImage}}" [download]="showImage">Donwload</a></nav>
+      <nav class="dop_navbar" (click)="delete(showImage)">Delete</nav>
+    </div>
   </div>
   <ng-template #staticImage>
     <div class="photo_inner_basic">
