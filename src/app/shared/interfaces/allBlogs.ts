@@ -8,6 +8,7 @@ export interface BLogs {
 export interface Photos {
   id: string
   img: string
+  my: boolean
 }
 
 export interface People{

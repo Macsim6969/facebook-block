@@ -1,6 +1,6 @@
 <div class="photos" *ngIf="photos.length;else loading">
   <nav class="photos_blocs" *ngFor="let photo of photos">
-    <img [src]="photo.img" (click)="showImg(photo.img)">
+    <img [src]="photo.img" (click)="showImg(photo)">
   </nav>
 </div>
 
@@ -9,6 +9,6 @@
 </ng-template>
 
 
-<div *ngIf="closeImage">
-<app-image-block [imageSrc]="showImage" (closesImage)="closesImage($event)"></app-image-block>
-</div>
+
+<app-image-block *ngIf="closeImage" (plusImage)="plusImage($event)" [imageSrc]="photo" (closesImage)="closesImage($event)"></app-image-block>
+

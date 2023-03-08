@@ -1,6 +1,6 @@
 import {Injectable, OnInit} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {map, Observable} from "rxjs";
+import {filter, map, Observable} from "rxjs";
 import {BLogs, People, Photos} from "../interfaces/allBlogs";
 import {Contacts} from "../interfaces/contacts";
 
@@ -49,4 +49,15 @@ export class BlogsService implements OnInit {
     return this.http.get<People[]>('https://facebook-d95ea-default-rtdb.firebaseio.com/peoples.json')
   }
 
+  setMePhoto(photo: Photos): Observable<Photos>{
+    return this.http.post<Photos>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/photos.json`, photo )
+  }
+
+  deleteMePhoto(photo: Photos): Observable<any>{
+    return this.http.delete(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/photos/${photo.id}.json`)
+  }
+
+  setChangePhoto(photo): Observable<Photos>{
+    return this.http.patch<Photos>(`https://facebook-d95ea-default-rtdb.firebaseio.com/photos/${photo.id}.json`, photo)
+  }
 }

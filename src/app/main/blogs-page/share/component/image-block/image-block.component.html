@@ -1,10 +1,12 @@
 <div class="image">
   <div class="image_block">
-    <span class="image_download"><a href="{{imageSrc}}" [download]="imageSrc"><img src="./assets/icons8-download-24.png" alt="Download"></a></span>
+    <span class="image_download"><a href="{{imageSrc.img}}" [download]="imageSrc.img"><img src="./assets/icons8-download-24.png" alt="Download"></a></span>
+    <div *ngIf="imageSrc.my == false; else minus" class="close" (click)="plusMe(imageSrc)">&#10010;</div>
+    <ng-template #minus><div class="close">&#10004;</div></ng-template>
     <div (click)="close(false)" class="close">&#10006;</div>
   </div>
   <nav class="image_inner">
-    <img class="image_active" src="{{imageSrc}}" alt="">
+    <img class="image_active" src="{{imageSrc.img}}" alt="">
   </nav>
 </div>
 

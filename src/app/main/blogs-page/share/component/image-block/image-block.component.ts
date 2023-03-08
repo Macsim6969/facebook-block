@@ -1,4 +1,6 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output} from '@angular/core';
+import {Photos} from "../../../../../shared/interfaces/allBlogs";
+import {BlogsService} from "../../../../../shared/services/blogs.service";
 
 @Component({
   selector: 'app-image-block',
@@ -6,14 +8,31 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./image-block.component.scss'],
 
 })
-export class ImageBlockComponent {
-
+export class ImageBlockComponent implements OnInit{
+  constructor(private blogService: BlogsService) {
+  }
   @Output() closesImage: EventEmitter<boolean> = new EventEmitter<boolean>()
-  @Input() imageSrc: string
+  @Output() plusImage: EventEmitter<boolean> = new EventEmitter<boolean>()
 
+  @Input() imageSrc: Photos
 
-  close(value: boolean) {
+ngOnInit() {
+}
+
+  close(value: boolean): void {
     this.closesImage.emit(value)
     document.body.style.overflow = ''
   }
+
+  plusMe(image: Photos): void {
+    const newImage: Photos = {
+      ...image,
+      my: true
+    }
+    this.blogService.setMePhoto(newImage).subscribe()
+    this.blogService.setChangePhoto(newImage).subscribe(res =>{
+      this.plusImage.emit(false)
+    })
+  }
+
 }

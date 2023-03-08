@@ -1,14 +1,21 @@
-<div class="photos" *ngIf="photos.length;else loading">
-  <nav class="photos_blocs" *ngFor="let photo of photos">
-    <img [src]="photo.img" (click)="showImg(photo.img)">
-  </nav>
+<div class="all_photo">
+  <div *ngIf="showImage;else staticImage" class="photos_inner">
+    <img src="{{showImage}}" alt="">
+  </div>
+  <ng-template #staticImage>
+    <div class="photo_inner_basic">
+      Click some your image
+    </div>
+  </ng-template>
+  <div class="photos" *ngIf="photos.length;else loading">
+    <nav class="photos_blocs" *ngFor="let photo of photos">
+      <img [src]="photo.img" (click)="showImg(photo.img)">
+    </nav>
+  </div>
+  <ng-template #loading>
+    <img class="loading" src="./assets/spinner.gif" alt="loading">
+  </ng-template>
 </div>
 
-<ng-template #loading>
-  <img class="loading" src="./assets/spinner.gif" alt="loading">
-</ng-template>
 
 
-<!--<div *ngIf="closeImage">-->
-<!--  <app-image-block [imageSrc]="showImage" (closesImage)="closesImage($event)"></app-image-block>-->
-<!--</div>-->

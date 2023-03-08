@@ -26,6 +26,6 @@ export class ContactService {
   }
 
   getMyPhotos(): Observable<Photos[]>{
-    return this.http.get<Photos[]>('https://facebook-d95ea-default-rtdb.firebaseio.com/user/photos.json')
+    return this.http.get<Photos[]>('https://facebook-d95ea-default-rtdb.firebaseio.com/users/photos.json')
   }
 }
