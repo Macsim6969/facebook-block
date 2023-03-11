@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MainService} from "../../shared/services/main.service";
 import {Contacts, Users} from "../../shared/interfaces/contacts";
-import {BlogsService} from "../../shared/services/blogs.service";
+import {UserService} from "./shared/user.service";
 
 @Component({
   selector: 'app-user-account',
@@ -12,12 +12,13 @@ export class UserAccountComponent implements OnInit{
   ourInfo: Users
   myContacts: Contacts[]
 
-  constructor(private userService: MainService, private blogService: BlogsService) {}
+  constructor(private usersService: MainService,private userService: UserService) {}
 
   ngOnInit(): void {
-    this.userService.getInfo().subscribe( res => {
+    this.usersService.getInfo().subscribe( res => {
       this.ourInfo = res
       this.myContacts = Object.values(res.contacts)
+      this.userService.userInfo = res
     })
   }
 }

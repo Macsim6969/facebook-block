@@ -1,1 +1,44 @@
-<p>about works!</p>
+<div class="about_me">
+  <h2 class="about_me_title">Information</h2>
+  <div class="about_me_inner" *ngFor="let aboutMe of about">
+    <div class="about_me_inner_left">
+      <div class="about_me_inner_left_inner">
+        Main Info:
+      </div>
+      <div class="about_me_inner_right">
+        <nav>Full Name: {{aboutMe.fullName}}</nav>
+        <nav>Birthday: {{aboutMe.date}}</nav>
+        <nav>Mobile Phone: {{aboutMe.mobilePhone}}</nav>
+        <nav>Sex: {{aboutMe.sex}}</nav>
+      </div>
+    </div>
+    <div class="about_me_inner_left">
+      <div class="about_me_inner_left_inner">
+        Places Of Residences:
+      </div>
+      <div class="about_me_inner_right" *ngFor="let residence of aboutMe.placesOfResidence">
+        <nav>City Of Residence: {{residence.cityOfResidencce}}</nav>
+        <nav>HomeTown: {{residence.homeTown}}</nav>
+      </div>
+    </div>
+    <div class="about_me_inner_left">
+      <div class="about_me_inner_left_inner">
+        Work and Education:
+      </div>
+      <div class="about_me_inner_right" *ngFor="let work of aboutMe.workAndEducation">
+        <nav>Work: {{work.work}}</nav>
+        <nav>Education: {{work.education}}</nav>
+      </div>
+    </div>
+    <div class="about_me_inner_left">
+      <div class="about_me_inner_left_inner">
+        Some Info:
+      </div>
+      <div class="about_me_inner_right" *ngFor="let main of aboutMe.someInfo">
+        <nav>Main Info: <span *ngIf="main.mainInfo.length;else baze">{{main.mainInfo}}</span> <ng-template #baze>Specify Main Info</ng-template></nav>
+        <nav>Achievements:  <span *ngIf="main.achievements.length;else bazes">{{main.achievements}}</span> <ng-template #bazes>Specify Achievements</ng-template></nav>
+        <nav>Favorite Quotes:  <span *ngIf="main.favoriteQuotes.length;else base">{{main.favoriteQuotes}}</span> <ng-template #base>Specify Favorite Quotes</ng-template></nav>
+      </div>
+    </div>
+  </div>
+</div>

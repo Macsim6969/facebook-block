@@ -1,6 +1,6 @@
-import {Photos} from "./allBlogs";
+import {BLogs, Photos} from "./allBlogs";
 
-export  interface Contacts {
+export interface Contacts {
   img: string
   name: string
   isOnline: boolean
@@ -9,6 +9,7 @@ export  interface Contacts {
 
   id: string
 }
+
 export interface Users {
   img: string
   imgCover: string
@@ -16,6 +17,33 @@ export interface Users {
   id: string
   contacts: Contacts[]
   photos: Photos[]
-  about: []
-  blogs: [ ]
+  about: About[]
+  blogs: BLogs[]
+}
+
+export interface About {
+  fullName: string
+  date: string
+  sex: string
+  mobilePhone: number
+  someInfo: [
+    {
+    mainInfo: string,
+    achievements: string,
+    favoriteQuotes: string
+    }
+  ],
+  workAndEducation: [
+    {
+    work: string,
+    education: string
+    }
+  ],
+  placesOfResidence: [
+    {
+    cityOfResidencce: string,
+    homeTown: string
+    }
+  ],
+  family: string
 }

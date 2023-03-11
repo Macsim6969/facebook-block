@@ -7,13 +7,16 @@ import { AboutComponent } from './about/about.component';
 import { FriendsComponent } from './friends/friends.component';
 import { PhotosComponent } from './photos/photos.component';
 import { MusicComponent } from './music/music.component';
-import {HelpPeopleComponent} from "../../shared/component/help-people/help-people.component";
+import { MeBlogComponent } from './publication/me-blog/me-blog.component';
+import {YouKnowPeopleComponent} from "../../shared/component/you-know-people/you-know-people.component";
 
 
 const routes: Routes = [
   {path: '', component: UserAccountComponent, children: [
-      {path: '', component: PublicationComponent},
-      {path: 'about', component: AboutComponent},
+      {path: '', component: AboutComponent},
+      {path: 'my-blog', component: PublicationComponent, children: [
+          {path: ':id', component: MeBlogComponent}
+        ]},
       {path: 'my-friends', component: FriendsComponent, children: [
           {path: '', loadChildren: () => import('./friends/friends.module').then(m => m.FriendsModule)}
         ]},
@@ -29,7 +32,8 @@ const routes: Routes = [
     FriendsComponent,
     PhotosComponent,
     MusicComponent,
-    HelpPeopleComponent
+    MeBlogComponent,
+    YouKnowPeopleComponent
   ],
   imports: [
     CommonModule,
