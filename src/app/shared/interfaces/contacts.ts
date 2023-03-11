@@ -16,4 +16,6 @@ export interface Users {
   id: string
   contacts: Contacts[]
   photos: Photos[]
+  about: []
+  blogs: [ ]
 }
