@@ -1,0 +1,15 @@
+<div class="blog">
+  <div class="blog_inner">
+    <div *ngFor="let blog of publication">
+      <div (mouseenter)="showMore = true" (mouseleave)="showMore = false" class="blog_id" style="background-size: cover; background: url({{blog.bgImage}})">
+        <h1 class="blog_id_title">{{blog.title}}</h1>
+        <nav  class="blog_id_more" [routerLink]="['/user', 'my-friends', user, 'blog' , blog.id]">Read more</nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <router-outlet></router-outlet>
+
+

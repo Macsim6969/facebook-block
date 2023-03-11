@@ -1,0 +1,15 @@
+<div class="blog_content">
+  <div class="blog_content_inner">
+    <div class="blog_content_inner_header">
+      <img src="{{blog.bgImage}}">
+      <nav class="blog_content_inner_header_back" (click)="removeHidden()" [routerLink]="['/user', 'my-friends', user, 'blog' ,]">&#8592; Back</nav>
+    </div>
+    <div class="blog_content_inner_main">
+      <h3 class="blog_content_inner_main_title">{{blog.title}}</h3>
+      <nav>
+        <img src="{{blog.img}}" alt="">
+      </nav>
+      <nav>{{blog.body}}</nav>
+    </div>
+  </div>
+</div>

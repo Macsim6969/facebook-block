@@ -1,13 +1,15 @@
 {
   "03j9ah85-h4st-7dh7-7245-7sje95617381": {
-    "blogs": [
-      {
+    "blogs": {
+      "dce35h12-vj3c": {
+        "bgImage": "https://img1.akspic.ru/crops/1/9/8/8/6/168891/168891-zakat-solnce-poslesvechenie-voda-atmosfera-1280x720.jpg",
         "body": "Гусеницы за период нахождения в этой стадии несколько раз линяют. Обычно они просто отбрасывают старый покров, однако гусеницы Uraba lugens по прозвищу «безумная шляпница» не спешат этого делать. Они накапливают старые головные капсулы наверху новой головы — судя по всему, чтобы выглядеть массивнее в глазах хищников.",
         "id": "dce35h12-vj3c",
         "img": "blob:https://web.telegram.org/aff6ec42-2950-4e94-ab16-3a4ffe5d5324",
         "title": "Существуют гусеницы которые возят на голове свои старые головы"
       }
-    ],
+    },
+    "favourite": false,
     "friends": [
       {
         "id": "03d8ae82-e5ce-4eb1-8344-3dbd32805818",
@@ -20,8 +22,7 @@
     "id": "03j9ah85-h4st-7dh7-7245-7sje95617381",
     "img": "https://ulibky.ru/wp-content/uploads/2019/08/kartinki_na_avu_devushke_2_13182534.jpg",
     "imgCover": "https://www.ejin.ru/wp-content/uploads/2018/11/alone-back-view-beautiful-674268-e1543582123439.jpg",
-    "isFriend": true,
-    "favourite": false,
+    "isFriend": false,
     "isOnline": false,
     "name": "Isabelle Grant",
     "photos": [
@@ -31,14 +32,16 @@
     ]
   },
   "05f8kh64-e8ch-1hf5-6386-3gbd74926501": {
-    "blogs": [
-      {
+    "blogs": {
+      "dfh42g56-fh4e": {
+        "bgImage": "https://img3.akspic.ru/crops/3/2/2/2/7/172223/172223-zakat-ios-oblako-voda-atmosfera-1280x720.jpg",
         "body": "Американские учёные попытались сравнить человеческий мозг с жестким диском компьютера и подсчитали, что человеческая память способна содержать в себе около 1 миллиона гигабайт (или 1 петабайт)",
         "id": "dfh42g56-fh4e",
         "img": "https://golosinfo.com/_nw/14/44284195.jpg",
         "title": "Сколько терабайт вмещает мозг?"
       }
-    ],
+    },
+    "favourite": false,
     "friends": [
       {
         "id": "03d8ae82-e5ce-4eb1-8344-3dbd32805818",
@@ -51,8 +54,7 @@
     "id": "05f8kh64-e8ch-1hf5-6386-3gbd74926501",
     "img": "https://demotivation.ru/wp-content/uploads/2021/03/1dYJszor6o.jpg",
     "imgCover": "https://www.meme-arsenal.com/memes/3fbc577bba972a33aed3262196e3608b.jpg",
-    "isFriend": true,
-    "favourite": false,
+    "isFriend": false,
     "isOnline": true,
     "name": "Harry Peters",
     "photos": [
@@ -62,14 +64,16 @@
     ]
   },
   "05f8kh64-e8ch-1hf5-6386-3gbd7492650134dfgdfg": {
-    "blogs": [
-      {
+    "blogs": {
+      "djr20r64-xu1b": {
         "body": "Ученые обнаружили, что средняя температура тела здоровых людей снизилась почти на 0,6 градуса за последние 200 лет – с 37 градусов Цельсия до 36,4. А те, кто живет вдали от цивилизации, стали «холоднее» на половину градуса всего за последние 16 лет.",
         "id": "djr20r64-xu1b",
         "img": "blob:https://web.telegram.org/a62b86a8-620d-4689-8089-b6d80175108f",
-        "title": "Люди за последние 200 лет стали… холоднее"
+        "title": "Люди за последние 200 лет стали… холоднее",
+        "bgImage": "https://img2.akspic.ru/crops/1/4/2/2/7/172241/172241-art-gaz-krug-tehnologii-elektrik-1280x720.jpg"
       }
-    ],
+    },
+    "favourite": false,
     "friends": [
       {
         "id": "26b6dj47-e5jg-5js8-1946-6shj10472458",
@@ -82,8 +86,7 @@
     "id": "05f8kh64-e8ch-1hf5-6386-3gbd7492650134dfgdfg",
     "img": "https://klike.net/uploads/posts/2022-07/1658295652_1.jpg",
     "imgCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqqqLZE-H00eKWVu_S2XgazHYlbis_J0Pcyg&usqp=CAU",
-    "isFriend": true,
-    "favourite": false,
+    "isFriend": false,
     "isOnline": true,
     "name": "Oscar Adams",
     "photos": [
@@ -93,14 +96,16 @@
     ]
   },
   "12g9sg14-r8sh-5sd8-2963-2kds91652425": {
-    "blogs": [
-      {
+    "blogs": {
+      "sdf65d24-sd9g": {
+        "bgImage": "https://img2.akspic.ru/crops/9/7/6/1/7/171679/171679-temnota-teatralnoe_iskusstvo-razvlechenie-sobytie-krug-1280x720.jpg",
         "body": "Золотые Олимпийские медали на самом деле не совсем золотые – в основном они состоят из серебра. Хоть какое-то утешение для тех, кто занял второе место – по сути, они получают ту же медаль, что и победитель, только цвет слегка отличается.",
         "id": "sdf65d24-sd9g",
         "img": "blob:https://web.telegram.org/2a8fba32-e5b1-4b24-bc3f-8ac11b27368a",
         "title": "Золотая олимпийская медаль содержит более 90% серебра"
       }
-    ],
+    },
+    "favourite": false,
     "friends": [
       {
         "id": "03j9ah85-h4st-7dh7-7245-7sje95617381",
@@ -113,8 +118,7 @@
     "id": "12g9sg14-r8sh-5sd8-2963-2kds91652425",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPiPWSkgdGdbus6zbWMLW-CiUttsA0BifTkQ&usqp=CAU",
     "imgCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThiN8jDQ_CL0STnnUl_ABme4_h-Ep2V7ubIA&usqp=CAU",
-    "isFriend": true,
-    "favourite": false,
+    "isFriend": false,
     "isOnline": false,
     "name": "Mia Jordan",
     "photos": [
@@ -124,14 +128,16 @@
     ]
   },
   "26b6dj47-e5jg-5js8-1946-6shj10472458": {
-    "blogs": [
-      {
+    "blogs": {
+      "sgr19b32-sy2b": {
+        "bgImage": "https://img1.akspic.ru/crops/1/5/9/1/7/171951/171951-lofoten-vyzvat_dozhd-senya-municipalitet_troms-more-1280x720.jpg",
         "body": "У учёных много версий того, почему это происходит. Самые вероятные: из-за огромных астероидов, которые повлияли на её курс в прошлом, или из-за сильной циркуляции воздушных потоков в верхних слоях атмосферы.",
         "id": "sgr19b32-sy2b",
         "img": "blob:https://web.telegram.org/72c33757-0d46-4e52-992f-42bdf3f01d41",
         "title": "Венера — единственная планета, которая вращается по часовой стрелке"
       }
-    ],
+    },
+    "favourite": false,
     "friends": [
       {
         "id": "03d8ae82-e5ce-4eb1-8344-3dbd32805818",
@@ -145,7 +151,6 @@
     "img": "https://mixmag.io/wp-content/pics/60375/image306-6.jpg",
     "imgCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv23491WKorj6d7P1Nw7pn4tYRiHFqoIZ_vg&usqp=CAU",
     "isFriend": false,
-    "favourite": false,
     "isOnline": true,
     "name": "Alice Mills",
     "photos": [
@@ -155,14 +160,16 @@
     ]
   },
   "63g8sg37-d4dh-1sj9-2686-6sjf19476523": {
-    "blogs": [
-      {
+    "blogs": {
+      "aur19h38-vg2k": {
+        "bgImage": "https://img3.akspic.ru/crops/9/3/2/2/7/172239/172239-sportkar-fara-legkovyye_avtomobili-bmw-bmw_m3-1280x720.jpg",
         "body": "Эти бактерии атакуют химические связи, удерживающие молекулы полиуретана вместе, и используют эти соединения для выработки жизненной энергии.",
         "id": "aur19h38-vg2k",
         "img": "blob:https://web.telegram.org/b34edf77-1eb6-4ec6-b263-302e602c3389",
         "title": "Существует бактерия, которая питается пластиком!"
       }
-    ],
+    },
+    "favourite": false,
     "friends": [
       {
         "id": "12g9sg14-r8sh-5sd8-2963-2kds91652425",
@@ -175,8 +182,7 @@
     "id": "63g8sg37-d4dh-1sj9-2686-6sjf19476523",
     "img": "https://cs9.pikabu.ru/post_img/big/2020/01/20/9/1579533577179156992.jpg",
     "imgCover": "https://proexpress.com.ua/wp-content/uploads/2019/11/kartinki-na-avu-dlya-patcanov-bez-litca.jpg",
-    "isFriend": true,
-    "favourite": false,
+    "isFriend": false,
     "isOnline": false,
     "name": "Connor Jackson",
     "photos": [
@@ -186,14 +192,16 @@
     ]
   },
   "72j3sj73-s4jd-1sh7-2463-5shd12084527": {
-    "blogs": [
-      {
+    "blogs": {
+      "srh34h25-sy4b": {
+        "bgImage": "https://img2.akspic.ru/crops/0/7/2/2/7/172270/172270-esteticheskij_oduvanchik_v_ogne-ogon-zhidkiy-rastenie-gaz-1280x720.jpg",
         "body": "Оказалось, что чем больше человек страдает от одиночества, тем активнее работает у него так называемая дефолт-система мозга. Эта система «отвечает» за сложные мыслительные процессы вроде воспоминаний, планирования будущего или представления гипотетических сценариев.",
         "id": "srh34h25-sy4b",
         "img": "blob:https://web.telegram.org/1cdb6af4-2049-4c2e-a33a-c943609d7703",
         "title": "Мозг одиноких людей работает особым образом"
       }
-    ],
+    },
+    "favourite": false,
     "friends": [
       {
         "id": "05f8kh64-e8ch-1hf5-6386-3gbd74926501",
@@ -206,8 +214,7 @@
     "id": "72j3sj73-s4jd-1sh7-2463-5shd12084527",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj5gporE1r-0DqoUCErWY--EgxHameLccgQ&usqp=CAU",
     "imgCover": "https://kartinkin.net/uploads/posts/2022-03/1646233143_1-kartinkin-net-p-grustnie-kartinki-na-avu-dlya-patsanov-1.jpg",
-    "isFriend": true,
-    "favourite": false,
+    "isFriend": false,
     "isOnline": true,
     "name": "Leo Gibson",
     "photos": [
@@ -217,14 +224,16 @@
     ]
   },
   "95j1kt37-j7sh-4sg7-1562-6djf18451957": {
-    "blogs": [
-      {
+    "blogs": {
+      "jws16j32-lh5h": {
+        "bgImage": "https://img2.akspic.ru/crops/0/7/8/1/3/131870/131870-dym-temnota-osveshhenie-plamya-fonar-1280x720.jpg",
         "body": "Вы проводите много времени в машине? Если вы считаете, что это время тратится впустую, дальше лучше не читать. Согласно исследованиям, в среднем человек проводит шесть месяцев своей жизни за рулём перед светофором, в ожидании зеленого света. К слову о времени, которого не вернуть...",
         "id": "jws16j32-lh5h",
         "img": "blob:https://web.telegram.org/35c461f1-3fc9-413b-9d1a-ab0b31866f87",
         "title": "В среднем человек тратит 6 месяцев своей жизни, дожидаясь зеленого света"
       }
-    ],
+    },
+    "favourite": false,
     "friends": [
       {
         "id": "05f8kh64-e8ch-1hf5-6386-3gbd74926501",
@@ -237,8 +246,7 @@
     "id": "95j1kt37-j7sh-4sg7-1562-6djf18451957",
     "img": "https://linedot.ru/wp-content/uploads/2019/10/34.jpg",
     "imgCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBTDmb4y8K14ZtfM-XJgJlIXfJQjKD72Gbw&usqp=CAU",
-    "isFriend": true,
-    "favourite": false,
+    "isFriend": false,
     "isOnline": true,
     "name": "Jessica Martin",
     "photos": [

@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Params, Route} from "@angular/router";
+import {ActivatedRoute, Params, Route, Router} from "@angular/router";
 import {switchMap} from "rxjs";
 import {BlogsService} from "../../../../shared/services/blogs.service";
 import {People} from "../../../../shared/interfaces/allBlogs";
+import {FriendsService} from "../../../../shared/services/friends.service";
 
 @Component({
   selector: 'app-me-friend',
@@ -11,7 +12,7 @@ import {People} from "../../../../shared/interfaces/allBlogs";
 })
 export class MeFriendComponent implements OnInit{
   user: People
-  constructor(private route: ActivatedRoute, private blogsService: BlogsService) {}
+  constructor(private route: ActivatedRoute, private blogsService: BlogsService, private friendsService: FriendsService, private router: Router) {}
 
   ngOnInit(): void {
     this.route.params.pipe(
@@ -20,7 +21,8 @@ export class MeFriendComponent implements OnInit{
       })
     ).subscribe((res: People) =>{
       this.user = res
-      console.log(res)
+      this.friendsService.friends = res
     })
+
   }
 }

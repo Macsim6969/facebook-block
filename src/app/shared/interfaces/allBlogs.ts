@@ -1,8 +1,9 @@
 export interface BLogs {
-  userId: number
+  img: string
   title: string
-  id : number
+  id : string | number
   body: string
+  bgImage?: string
 }
 
 export interface Photos {
@@ -18,7 +19,7 @@ export interface People{
   id: string
   isFriend: boolean
   name: string
-  blogs: BLogs[] | BLogs | null
+  blogs: BLogs[]
   favourite: boolean
   friends: People[]
   photos: Photos[]
