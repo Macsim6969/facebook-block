@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {Contacts} from "../../../../shared/interfaces/contacts";
 import {MainService} from "../../../../shared/services/main.service";
 import {UserService} from "../../shared/user.service";
 import {ContactService} from "../../../../shared/services/contact.service";
@@ -13,7 +12,7 @@ import {People} from "../../../../shared/interfaces/allBlogs";
 export class AllFriendsComponent {
   showId: string = ''
   showMore: boolean = false
-  friends: Contacts[]
+  friends: People[]
   favourite: boolean =false
 search: string =''
   constructor(private mainService: MainService, private userService: UserService, private contactService: ContactService) {
@@ -29,7 +28,7 @@ search: string =''
     this.showMore =bool
   }
 
-  remove(user: Contacts){
+  remove(user: People){
     const newUser = {
       ...user,
       isFriend: false,
@@ -42,7 +41,7 @@ search: string =''
     this.contactService.changePeopleToFriend(newUser).subscribe()
   }
 
-  toFavourite(user: Contacts){
+  toFavourite(user: People){
     const newFavourite = {
       ...user,
       favourite: true
@@ -57,7 +56,7 @@ search: string =''
     })
   }
 
-  unFavourites(user: Contacts){
+  unFavourites(user: People){
     const newFavourite = {
       ...user,
       favourite: false

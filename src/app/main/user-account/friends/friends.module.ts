@@ -6,11 +6,16 @@ import {FavouriteFriendsComponent} from './favourite-friends/favourite-friends.c
 import {UserService} from "../shared/user.service";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {FiltersPipes} from "./shared/filter.pipe";
+import { OtherFriendsComponent } from './other-friends/other-friends.component';
+import { PeopleIdComponent } from './other-friends/people-id/people-id.component';
 
 
 const routes: Routes = [
   {path: '', component: AllFriendsComponent},
   {path: 'favourites', component: FavouriteFriendsComponent },
+  {path: 'other-people', component: OtherFriendsComponent, children: [
+      {path: ':id', component: PeopleIdComponent}
+    ]},
   {path: ':id', loadChildren: () => import('./me-friend/me-friend.module').then(m => m.MeFriendModule)},
 ]
 
@@ -18,7 +23,9 @@ const routes: Routes = [
   declarations: [
     AllFriendsComponent,
     FavouriteFriendsComponent,
-    FiltersPipes
+    FiltersPipes,
+    OtherFriendsComponent,
+    PeopleIdComponent
   ],
   imports: [
     CommonModule,

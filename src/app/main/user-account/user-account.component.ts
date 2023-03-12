@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {MainService} from "../../shared/services/main.service";
-import {Contacts, Users} from "../../shared/interfaces/contacts";
+import {Users} from "../../shared/interfaces/contacts";
 import {UserService} from "./shared/user.service";
+import {People} from "../../shared/interfaces/allBlogs";
 
 @Component({
   selector: 'app-user-account',
@@ -10,7 +11,7 @@ import {UserService} from "./shared/user.service";
 })
 export class UserAccountComponent implements OnInit{
   ourInfo: Users
-  myContacts: Contacts[]
+  myContacts: People[]
 
   constructor(private usersService: MainService,private userService: UserService) {}
 

@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 97%;
     .friends_head_log{
       font-size: 1.5rem;
       font-weight: 600;
@@ -17,6 +17,13 @@
       margin-bottom: 15px;
       justify-content: space-between;
       .friends_main_navbar_inner{
+        padding: 9px;
+        cursor: pointer;
+      }
+    }
+    .friends_main_navbar_last{
+      margin-bottom: 15px;
+      &_inner{
         padding: 9px;
         cursor: pointer;
       }
@@ -32,7 +39,6 @@
     }
   }
 }
-
 
 .active{
   border-bottom: 1px solid black;

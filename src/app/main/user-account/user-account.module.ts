@@ -9,6 +9,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { MusicComponent } from './music/music.component';
 import { MeBlogComponent } from './publication/me-blog/me-blog.component';
 import {YouKnowPeopleComponent} from "../../shared/component/you-know-people/you-know-people.component";
+import { EditComponent } from './edit/edit.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
           {path: '', loadChildren: () => import('./friends/friends.module').then(m => m.FriendsModule)}
         ]},
       {path: 'photos', component: PhotosComponent},
-      {path: 'music', component: MusicComponent}
+      {path: 'music', component: MusicComponent},
+      {path: 'edit', component: EditComponent}
     ]}
 ]
 @NgModule({
@@ -33,7 +35,8 @@ const routes: Routes = [
     PhotosComponent,
     MusicComponent,
     MeBlogComponent,
-    YouKnowPeopleComponent
+    YouKnowPeopleComponent,
+    EditComponent
   ],
   imports: [
     CommonModule,

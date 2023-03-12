@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Contacts} from "../../../../shared/interfaces/contacts";
 import {MainService} from "../../../../shared/services/main.service";
 import {ContactService} from "../../../../shared/services/contact.service";
+import {People} from "../../../../shared/interfaces/allBlogs";
 
 @Component({
   selector: 'app-favourite-friends',
@@ -11,7 +11,7 @@ import {ContactService} from "../../../../shared/services/contact.service";
 export class FavouriteFriendsComponent implements OnInit{
   showId: string = ''
   showMore: boolean = false
-  contacts: Contacts[]
+  contacts: People[]
   favourite: boolean =false
   search: string = ''
   constructor(private mainService: MainService, private contactService: ContactService) {}
@@ -28,7 +28,7 @@ export class FavouriteFriendsComponent implements OnInit{
   }
 
 
-  remove(user: Contacts){
+  remove(user: People){
     const newUser = {
       ...user,
       isFriend: false,
@@ -41,7 +41,7 @@ export class FavouriteFriendsComponent implements OnInit{
     this.contactService.changePeopleToFriend(newUser).subscribe()
   }
 
-  unFavourites(user: Contacts) {
+  unFavourites(user: People) {
     const newFavourite = {
       ...user,
       favourite: false

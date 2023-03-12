@@ -16,11 +16,10 @@ export class AuthInfoComponent implements OnInit{
   ngOnInit() {
   }
 
-  routerToFriend(): void{
-    if(this.router.navigate(['/blogs/content'])){
-      setTimeout(()=>{
-        this.router.navigate(['blogs/people'])
-      }, 0)
-    }
+  routerToFriend(){
+
+    this.router.navigate(['/blogs/content']).then(()=>{setTimeout(()=>{
+      this.router.navigate(['/blogs', 'people'])
+    }, 100)})
   }
 }

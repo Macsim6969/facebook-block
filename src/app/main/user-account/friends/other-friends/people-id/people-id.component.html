@@ -1,0 +1,35 @@
+<div class="about-friend" *ngIf="people">
+  <div class="user_inner">
+    <div class="user_inner_head">
+      <nav class="head_img">
+        <img src="{{people.imgCover}}" alt="">
+        <div class="head_img_me">
+          <img src="{{people.img}}" alt="{{people.name}}">
+        </div>
+      </nav>
+
+      <div class="user_info">
+        <nav class="user_info_back" [routerLink]="['/user', 'my-friends']">&#8592; Back</nav>
+        <nav class="user_info_txt">{{people.name}}</nav>
+        <div class="user_info_inner">
+          <div class="user_info_friend" [routerLink]="['/user', 'my-friends']">
+            <nav class="user_info_friend_inner" *ngIf="people.friends;else contactZero">Friends: {{people.friends.length}}</nav>
+            <ng-template #contactZero><nav class="user_info_friend_inner">My friends: 0</nav></ng-template>
+            <div class="user_info_friend_sircle">
+              <nav class="sircle_info" *ngFor="let friends of people.friends">
+                <img src="{{friends.img}}" alt="">
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+      <div class="err_info">
+        <h4>That see more info you can add this user and see your blogs photos and others</h4>
+        <nav (click)="addToFriends()">Add To Friends</nav>
+      </div>
+    </div>
+    <div class="user_content"><router-outlet></router-outlet></div>
+  </div>
+</div>

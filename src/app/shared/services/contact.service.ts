@@ -1,7 +1,6 @@
 import {Injectable} from "@angular/core";
-import {Contacts} from "../interfaces/contacts";
 import {HttpClient} from "@angular/common/http";
-import {map, Observable, switchMap} from "rxjs";
+import { Observable} from "rxjs";
 import {People, Photos} from "../interfaces/allBlogs";
 
 @Injectable({providedIn: "root"})
@@ -13,15 +12,15 @@ export class ContactService {
     return this.http.patch<People>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/contacts/${people.id}.json`, people)
   }
 
-  changePeopleToFriend(people: Contacts): Observable<People>{
+  changePeopleToFriend(people: People): Observable<People>{
     return this.http.patch<People>(`https://facebook-d95ea-default-rtdb.firebaseio.com/peoples/${people.id}.json`, people)
   }
 
-  changePeopleToFavourites(people: Contacts): Observable<People>{
+  changePeopleToFavourites(people: People): Observable<People>{
     return this.http.patch<People>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/contacts/${people.id}.json`, people)
   }
 
-  deleteFriend(peple: Contacts): Observable<any>{
+  deleteFriend(peple: People): Observable<any>{
     return this.http.delete(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/contacts/${peple.id}.json`)
   }
 

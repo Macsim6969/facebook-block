@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Contacts, Users} from "../../interfaces/contacts";
+import {People} from "../../interfaces/allBlogs";
 
 @Component({
   selector: 'app-contacts',
@@ -7,7 +7,7 @@ import {Contacts, Users} from "../../interfaces/contacts";
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit{
-  @Input() yourContacts: Contacts[]
+  @Input() yourContacts: People[]
   search: string = ''
   showInput: boolean = false
   constructor() {}

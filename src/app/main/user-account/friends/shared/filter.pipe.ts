@@ -1,10 +1,10 @@
-import {Pipe, PipeTransform} from '@angular/core'
-import {Contacts} from "../../../../shared/interfaces/contacts";
+import {Pipe, PipeTransform} from '@angular/core';
+import {People} from "../../../../shared/interfaces/allBlogs";
 
 
 @Pipe({name: 'filter'})
 export class FiltersPipes implements PipeTransform{
-  transform(contacts: Contacts[], search: string = ''): Contacts[] {
+  transform(contacts: People[], search: string = ''): People[] {
     if(!search.trim()){
       return contacts
     }

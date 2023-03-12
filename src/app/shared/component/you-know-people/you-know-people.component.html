@@ -1,1 +1,34 @@
-<p>you-know-people works!</p>
+<div class="maybe_know" *ngIf="showBlock;else blockSet">
+  <div class="maybe_know_header">
+    <p>You can know their</p>
+    <div class="maybe_know_header_setting">
+      <nav (click)="showSetting = !showSetting"><img style="width: 28px;" src="./assets/menu.png" alt=""></nav>
+    </div>
+    <div class="maybe_know_header_setting_inner" *ngIf="showSetting">
+      <nav (click)="showBlock = false; showSetting= false">Close</nav>
+      <nav (click)="routerToFriend()">See more</nav>
+    </div>
+  </div>
+  <div class="maybe_know_inner" *ngIf="people.length;else loading">
+    <div class="maybe_know_inner_content" *ngFor="let user of people">
+      <img style="width: 145px" height="145px" src="{{user.img}}" alt="">
+      <p>{{user.name}}</p>
+    </div>
+  </div>
+  <ng-template #loading>
+  <img class="loading" src="./assets/spinner.gif" alt="Loading">
+</ng-template>
+</div>
+
+<ng-template #blockSet>
+  <div class="block_set">
+    <div (click)="showBlockSett()" class="block_set_btn">
+      <img width="33px" src="./assets/menu.png" alt="">
+    </div>
+    <div class="block_set_info" *ngIf="showBlockSetting">
+      <div class="block_set_info_inner">
+        <nav>Show block people <span><input (click)="showBlock = !showBlock" type="checkbox"></span></nav>
+      </div>
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,141 @@
+.maybe_know{
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  &_header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+    &_setting{
+      display: flex;
+      flex-direction: column;
+      nav{
+        cursor: pointer;
+        padding: 10px;
+        background-color: #bebbbb;
+        border-radius: 35px;
+        height: 28px;
+      }
+    }
+    &_setting_inner{
+      position: absolute;
+      right: 9%;
+      top: 33%;
+      background: #c7c7c7;
+      padding: 5px;
+      border-radius: 7px;
+      @media (max-width: 1280px) {
+        right: 2%;
+      }
+      @media (max-width: 1280px) {
+        top: 34%;
+      }
+      nav{
+        cursor: pointer;
+        margin-bottom: 7px;
+      }
+    }
+  }
+  &_inner{
+    justify-content: space-between;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    &_content{
+      padding: 0 15px;
+    }
+  }
+  .loading{
+    z-index: -5;
+    position: absolute;
+    left: 45%;
+    top: 30.5%;
+  }
+  &_inner::-webkit-scrollbar {
+    width: 10px;
+  }
+  &_inner::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 5px;
+  }
+
+  &_inner::-webkit-scrollbar-thumb {
+    background: #8c8a8a;
+    border-radius: 5px;
+  }
+
+  &_inner::-webkit-scrollbar-thumb:hover {
+    background: #7c7b7b;
+  }
+}
+
+.block_set{
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  &_btn{
+    cursor: pointer;
+    background: #bebbbb;
+    padding: 10px;
+    height: 33px;
+    border-radius: 25px;
+  }
+  &_info{
+    width: 215px;
+    position: absolute;
+    bottom: 70%;
+    right: 65%;
+    border-radius: 10px;
+    background: #bebbbb;
+    &_inner{
+      padding: 5px;
+      nav{
+        input[type=checkbox] {
+          position: relative;
+          top: -4px;
+          cursor: pointer;
+        }
+        input[type=checkbox]:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 0;
+          left: 0;
+          background-color:#e9e9e9;
+        }
+        input[type=checkbox]:checked:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 0;
+          left: 0;
+          background-color:#1E80EF;
+        }
+        input[type=checkbox]:checked:after {
+          content: "";
+          display: block;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          position: absolute;
+          top: 2px;
+          left: 6px;
+        }
+      }
+    }
+  }
+}

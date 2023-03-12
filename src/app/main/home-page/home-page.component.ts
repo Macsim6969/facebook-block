@@ -1,8 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Contacts, Users} from "../../shared/interfaces/contacts";
-import {LogService} from "../../auth/service/log.service";
+import {Component, OnInit} from '@angular/core';
+import {Users} from "../../shared/interfaces/contacts";
 import {MainService} from "../../shared/services/main.service";
-import {convertToParamMap} from "@angular/router";
+import {People} from "../../shared/interfaces/allBlogs";
 
 @Component({
   selector: 'app-home-page',
@@ -11,7 +10,7 @@ import {convertToParamMap} from "@angular/router";
 })
 export class HomePageComponent implements OnInit{
   allUserInfo: Users
-  userContacts: Contacts[]
+  userContacts: People[]
   constructor(private mainService: MainService) {}
 
   ngOnInit() {

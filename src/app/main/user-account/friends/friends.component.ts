@@ -1,6 +1,7 @@
-import {Component, ContentChild, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MainService} from "../../../shared/services/main.service";
-import {Contacts} from "../../../shared/interfaces/contacts";
+import {UserService} from "../shared/user.service";
+import {People} from "../../../shared/interfaces/allBlogs";
 
 @Component({
   selector: 'app-friends',
@@ -9,13 +10,17 @@ import {Contacts} from "../../../shared/interfaces/contacts";
 })
 export class FriendsComponent implements OnInit{
 
-  friends: Contacts[]
+  friends: People[]
 
-  constructor(private mainService: MainService) {
+  showFriendBlock: boolean
+
+  constructor(private mainService: MainService, private userService: UserService) {
   }
   ngOnInit() {
     this.mainService.getInfo().subscribe(res =>{
       this.friends = Object.values(res.contacts)
     })
+
+    this.showFriendBlock = this.userService.showFriendBlock
   }
 }

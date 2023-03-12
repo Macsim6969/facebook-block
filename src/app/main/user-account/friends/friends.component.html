@@ -5,6 +5,14 @@
       <nav class="friends_main_navbar_inner" [routerLink]="['/user', 'my-friends']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">All</nav>
       <nav class="friends_main_navbar_inner" [routerLink]="['/user', 'my-friends', 'favourites']" routerLinkActive="active">Favorites</nav>
     </div>
+    <div class="friends_main_navbar_last" *ngIf="showFriendBlock;else clearBlock">
+      <nav class="friends_main_navbar_last_inner" [routerLink]="['/user', 'my-friends', 'other-people']" routerLinkActive="active">Other</nav>
+    </div>
+    <ng-template #clearBlock>
+    <div class="friends_main_navbar_last" >
+      <nav class="friends_main_navbar_last_inner"></nav>
+    </div>
+    </ng-template>
   </div>
   <div class="friends_main">
     <div class="friends_main_people"><router-outlet></router-outlet></div>

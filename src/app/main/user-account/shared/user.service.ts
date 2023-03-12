@@ -2,12 +2,14 @@ import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Users} from "../../../shared/interfaces/contacts";
 import {map, Observable} from "rxjs";
-import {BLogs} from "../../../shared/interfaces/allBlogs";
+import {BLogs, People} from "../../../shared/interfaces/allBlogs";
 
 @Injectable({providedIn: "root"})
 
 export class UserService {
   userInfo: Users
+
+  showFriendBlock: boolean = false
   constructor(private http: HttpClient) {}
 
 
@@ -20,6 +22,19 @@ export class UserService {
            id
          }
        })
+      )
+  }
+
+  getByIdPeople(id: string): Observable<People>{
+    return this.http.get<People>(`https://facebook-d95ea-default-rtdb.firebaseio.com/peoples/${id}.json`)
+      .pipe(
+        map((people: People) =>{
+          return{
+            ...people,
+            id,
+            isFriend: false
+          }
+        })
       )
   }
 }

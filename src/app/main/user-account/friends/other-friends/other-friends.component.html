@@ -1,0 +1,23 @@
+<div class="friends_head_search">
+  <img src="./assets/search.svg" alt="search">
+  <input placeholder="search" type="text" [(ngModel)]="search">
+</div>
+<div class="all">
+  <div class="friends_main_people_inner" *ngFor="let user of people|filter: search">
+    <div class="people_inner_info" [routerLink]="['/user', 'my-friends', 'other-people', user.id]">
+      <img style="width: 68px; height: 68px" src="{{user.img}}" alt="{{user.name}}">
+      <h4>{{user.name}}
+      </h4>
+    </div>
+    <div class="people_inner_dop">
+      <img src="./assets/more.png" alt="more" (click)="show(user.id ,showMore = !showMore)">
+    </div>
+    <div *ngIf="user.id === showId && showMore" class="dop_inner">
+      <nav (click)="add(user)">Add</nav>
+      <nav (click)="noInteresting(user.id)">No interesting</nav>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+

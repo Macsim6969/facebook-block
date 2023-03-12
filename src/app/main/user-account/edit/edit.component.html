@@ -1,0 +1,17 @@
+<div class="edit">
+  <div class="edit_inner">
+    <div class="edit_inner_header">
+      <div class="edit_inner_header_logo">Edite Profile</div>
+      <div class="edit_inner_header_close">&#10006;</div>
+    </div>
+    <div class="edit_inner_main">
+      <div class="edit_inner_main_photo">
+        <div class="edit_inner_main_photo_header">Profile photo</div>
+        <nav class="edit_inner_main_photo_change">Change<input (click)="photo($event)" type="file"></nav>
+      </div>
+      <div class="edit_inner_main_photome">
+        <nav><img src="{{user.img}}" alt=""></nav>
+      </div>
+    </div>
+  </div>
+</div>
