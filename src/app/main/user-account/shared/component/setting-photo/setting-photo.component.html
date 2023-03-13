@@ -1,0 +1,12 @@
+<div class="setting">
+  <div class="setting_header">
+    <div class="setting_header_title">Choice Photo</div>
+    <div class="setting_header_close" (click)="close()">&#10006;</div>
+  </div>
+  <hr>
+  <div class="setting_photo">
+    <nav class="setting_photo_inner" *ngFor="let img of photo">
+      <img (click)="take(img.src)" src="{{img.src}}" alt="">
+    </nav>
+  </div>
+</div>

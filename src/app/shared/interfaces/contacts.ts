@@ -9,7 +9,11 @@ export interface Users {
   contacts: People[]
   photos: Photos[]
   about: About[]
-  blogs: BLogs[]
+  blogs: BLogs[],
+  setting:[
+    avatarPhoto: SettingPhoto[],
+    coverPhoto: SettingPhoto[]
+  ]
 }
 
 export interface About {
@@ -37,4 +41,9 @@ export interface About {
     }
   ],
   family: string
+}
+
+export class SettingPhoto {
+    id: string
+    src: string
 }

@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {Users} from "../../../shared/interfaces/contacts";
+import {SettingPhoto, Users} from "../../../shared/interfaces/contacts";
 import {map, Observable} from "rxjs";
 import {BLogs, People} from "../../../shared/interfaces/allBlogs";
 
@@ -36,5 +36,13 @@ export class UserService {
           }
         })
       )
+  }
+
+  getPhotoToSetting(url: string): Observable<SettingPhoto>{
+    return this.http.get<SettingPhoto>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users/setting/${url}.json`)
+  }
+
+  changeSettingUser(newUser: Users): Observable<Users>{
+    return this.http.patch<Users>(`https://facebook-d95ea-default-rtdb.firebaseio.com/users.json`, newUser)
   }
 }

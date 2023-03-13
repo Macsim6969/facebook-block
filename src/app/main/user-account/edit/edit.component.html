@@ -2,16 +2,58 @@
   <div class="edit_inner">
     <div class="edit_inner_header">
       <div class="edit_inner_header_logo">Edite Profile</div>
-      <div class="edit_inner_header_close">&#10006;</div>
+      <div class="edit_inner_header_close" [routerLink]="['/user']">&#10006;</div>
     </div>
     <div class="edit_inner_main">
       <div class="edit_inner_main_photo">
         <div class="edit_inner_main_photo_header">Profile photo</div>
-        <nav class="edit_inner_main_photo_change">Change<input (click)="photo($event)" type="file"></nav>
+        <nav class="edit_inner_main_photo_change"
+             (click)="getSetPhoto('avatarPhoto'); showSettimgPhoto = true; photoCh='1'">Change
+        </nav>
       </div>
       <div class="edit_inner_main_photome">
-        <nav><img src="{{user.img}}" alt=""></nav>
+        <nav *ngIf="!photo"><img src="{{user.img}}" alt=""></nav>
+        <nav *ngIf="photo"><img src="{{photo}}" alt=""></nav>
+      </div>
+      <div class="edit_inner_main_photo">
+        <div class="edit_inner_main_photo_header">Covers photo</div>
+        <nav class="edit_inner_main_photo_change"
+             (click)="getSetPhoto('coverPhoto'); showSettimgPhoto = true; photoCh='2'">Change
+        </nav>
+      </div>
+      <div class="edit_inner_main_photo-cover">
+        <nav *ngIf="!coverPhoto"><img src="{{user.imgCover}}" alt=""></nav>
+        <nav *ngIf="coverPhoto"><img src="{{coverPhoto}}" alt=""></nav>
+      </div>
+      <div class="edit_inner_main_photo">
+        <div class="edit_inner_main_photo_header">About me</div>
+        <nav class="edit_inner_main_photo_change" (click)="showSettAbout = true">Change</nav>
+      </div>
+      <div *ngIf="!showSettAbout" class="edit_inner_main_about">
+        <div *ngFor="let about of user.about">
+          <nav>Full Name: {{about.fullName}}</nav>
+          <nav>Birthday: {{about.date}}</nav>
+          <nav>Mobile Phone: {{about.mobilePhone}}</nav>
+          <nav>Sex: {{about.sex}}</nav>
+        </div>
+      </div>
+      <div *ngIf="showSettAbout" class="edit_inner_main_about">
+        <div>
+          <div (click)="showSettAbout = false">Close</div>
+          <nav>Full Name: <input type="text" [(ngModel)]="fullName"></nav>
+          <nav>Birthday: <input type="number" [(ngModel)]="birthday"></nav>
+          <nav>Mobile Phone: <input type="number" [(ngModel)]="mobilePhone"></nav>
+          <nav>Sex: <input type="text" [(ngModel)]="sex"></nav>
+        </div>
+      </div>
+      <div (click)="save()">
+        Save
       </div>
     </div>
   </div>
+</div>
+
+<div *ngIf="showSettimgPhoto">
+  <app-setting-photo [photo]="photoToSett" (changedPhoto)="takePhoto($event)" (closeBlock)="closeSettBlock($event)"
+                     [photoCh]="photoCh" (changedCoverPhoto)="takeCoverPhoto($event)"></app-setting-photo>
 </div>

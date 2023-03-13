@@ -10,6 +10,8 @@ import { MusicComponent } from './music/music.component';
 import { MeBlogComponent } from './publication/me-blog/me-blog.component';
 import {YouKnowPeopleComponent} from "../../shared/component/you-know-people/you-know-people.component";
 import { EditComponent } from './edit/edit.component';
+import {FormsModule} from "@angular/forms";
+import { SettingPhotoComponent } from './shared/component/setting-photo/setting-photo.component';
 
 
 const routes: Routes = [
@@ -36,13 +38,15 @@ const routes: Routes = [
     MusicComponent,
     MeBlogComponent,
     YouKnowPeopleComponent,
-    EditComponent
+    EditComponent,
+    SettingPhotoComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes)
+    imports: [
+        CommonModule,
+        RouterModule.forChild(routes),
+        FormsModule
 
-  ],
+    ],
   exports: [
     RouterModule
   ]

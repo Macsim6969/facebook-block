@@ -21,5 +21,7 @@ export class UserAccountComponent implements OnInit{
       this.myContacts = Object.values(res.contacts)
       this.userService.userInfo = res
     })
+
+
   }
 }
