@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {LogService} from "../../../auth/service/log.service";
 import {MainService} from "../../services/main.service";
 import {Users} from "../../interfaces/contacts";
+import {NavigationEnd, Router} from "@angular/router";
 
 // import {LoginService} from "../../services/login.ts.service";
 
@@ -19,6 +20,5 @@ export class HeaderComponent implements OnInit {
   logout() {
     this.loginService.logout()
   }
-
 
 }

@@ -69,8 +69,9 @@ export class EditComponent implements OnInit {
     }
 
     this.userService.changeSettingUser(newUser).subscribe(res => {
-
-      this.router.navigate(['/user'])
+      new Promise(res =>{
+       location.reload()
+      })
     })
   }
 }

@@ -10,6 +10,7 @@ export class UserService {
   userInfo: Users
 
   showFriendBlock: boolean = false
+
   constructor(private http: HttpClient) {}
 
 
