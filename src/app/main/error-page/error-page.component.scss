@@ -1,0 +1,30 @@
+.error{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &_title{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  &_content{
+    display: flex;
+    flex-direction: row;
+    &_inner{
+      font-family: cursive;
+
+      font-size: 12rem;
+      padding: 0 15px;
+    }
+  }
+  &_left{
+    background-color: #b6b1b1;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+}
