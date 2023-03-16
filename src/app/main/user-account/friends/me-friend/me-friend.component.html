@@ -12,7 +12,7 @@
         <nav class="user_info_back" [routerLink]="['/user', 'my-friends']">&#8592; Back</nav>
         <nav class="user_info_txt">{{user.name}}</nav>
         <div class="user_info_inner">
-          <div class="user_info_friend" [routerLink]="['/user', 'my-friends']">
+          <div class="user_info_friend" [routerLink]="['/user', 'my-friends', user.id, 'friends']">
             <nav class="user_info_friend_inner" *ngIf="user.friends;else contactZero">My friends: {{user.friends.length}}</nav>
             <ng-template #contactZero><nav class="user_info_friend_inner">My friends: 0</nav></ng-template>
             <div class="user_info_friend_sircle">
@@ -26,10 +26,10 @@
       </div>
       <hr>
       <div class="user_navbar">
-        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'blog']" [routerLinkActiveOptions]="{exact: true}">Publocation</nav>
-        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'about']">About</nav>
-        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'friends']">Friends</nav>
-        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'photos']">Photos</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id]" [routerLinkActiveOptions]="{exact: true}">About</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'blog']">Publocation</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'friend']">Friends</nav>
+        <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'photo']">Photos</nav>
         <nav class="user_navbar_inner" routerLinkActive="active" [routerLink]="['/user', 'my-friends', user.id, 'music']">Music</nav>
       </div>
     </div>

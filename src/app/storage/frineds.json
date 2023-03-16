@@ -1,5 +1,33 @@
 {
   "03j9ah85-h4st-7dh7-7245-7sje95617381": {
+    "about": [
+      {
+        "date": "29.05.2000",
+        "family": "",
+        "fullName": "Isabelle Grant",
+        "mobilePhone": "+380962851625",
+        "placesOfResidence": [
+          {
+            "cityOfResidencce": "Kyiv",
+            "homeTown": "Kyiv"
+          }
+        ],
+        "sex": "Female",
+        "someInfo": [
+          {
+            "achievements": "",
+            "favoriteQuotes": "",
+            "mainInfo": ""
+          }
+        ],
+        "workAndEducation": [
+          {
+            "education": "DUT",
+            "work": "Junior Front-End Developer"
+          }
+        ]
+      }
+    ],
     "blogs": {
       "dce35h12-vj3c": {
         "bgImage": "https://img1.akspic.ru/crops/1/9/8/8/6/168891/168891-zakat-solnce-poslesvechenie-voda-atmosfera-1280x720.jpg",
@@ -9,7 +37,7 @@
         "title": "Существуют гусеницы которые возят на голове свои старые головы"
       }
     },
-    "favourite": false,
+    "favourite": true,
     "friends": [
       {
         "id": "03d8ae82-e5ce-4eb1-8344-3dbd32805818",
@@ -22,16 +50,45 @@
     "id": "03j9ah85-h4st-7dh7-7245-7sje95617381",
     "img": "https://ulibky.ru/wp-content/uploads/2019/08/kartinki_na_avu_devushke_2_13182534.jpg",
     "imgCover": "https://www.ejin.ru/wp-content/uploads/2018/11/alone-back-view-beautiful-674268-e1543582123439.jpg",
-    "isFriend": false,
+    "isFriend": true,
     "isOnline": false,
     "name": "Isabelle Grant",
     "photos": [
       {
-        "img": "https://i.pinimg.com/originals/89/bd/36/89bd3636218fb0d77dfa44e3fcd14a06.jpg"
+        "img": "https://img2.akspic.ru/crops/0/8/3/2/7/172380/172380-multfilm-poster-art-vizualnoe_iskusstvo-pesnya-1366x768.jpg"
       }
-    ]
+    ],
+    "help": false
   },
   "05f8kh64-e8ch-1hf5-6386-3gbd74926501": {
+    "about": [
+      {
+        "date": "23.03.2000",
+        "family": "",
+        "fullName": "Harry Peters",
+        "mobilePhone": "+380963952736",
+        "placesOfResidence": [
+          {
+            "cityOfResidencce": "Lviv",
+            "homeTown": "Lviv"
+          }
+        ],
+        "sex": "Male",
+        "someInfo": [
+          {
+            "achievements": "",
+            "favoriteQuotes": "",
+            "mainInfo": ""
+          }
+        ],
+        "workAndEducation": [
+          {
+            "education": "Acting University",
+            "work": "Actor"
+          }
+        ]
+      }
+    ],
     "blogs": {
       "dfh42g56-fh4e": {
         "bgImage": "https://img3.akspic.ru/crops/3/2/2/2/7/172223/172223-zakat-ios-oblako-voda-atmosfera-1280x720.jpg",
@@ -59,18 +116,47 @@
     "name": "Harry Peters",
     "photos": [
       {
-        "img": "https://www.meme-arsenal.com/memes/3fbc577bba972a33aed3262196e3608b.jpg"
+        "img": "https://img3.akspic.ru/crops/8/7/3/2/7/172378/172378-vozdushnyj_shar-derevo-priroda-les-el-1366x768.jpg"
       }
-    ]
+    ],
+    "help": false
   },
   "05f8kh64-e8ch-1hf5-6386-3gbd7492650134dfgdfg": {
+    "about": [
+      {
+        "date": "15.08.2002",
+        "family": "",
+        "fullName": "Oscar Adams",
+        "mobilePhone": "+380982649376",
+        "placesOfResidence": [
+          {
+            "cityOfResidencce": "Kyiv",
+            "homeTown": "Kyiv"
+          }
+        ],
+        "sex": "Male",
+        "someInfo": [
+          {
+            "achievements": "",
+            "favoriteQuotes": "",
+            "mainInfo": ""
+          }
+        ],
+        "workAndEducation": [
+          {
+            "education": "University of Design",
+            "work": "Designer"
+          }
+        ]
+      }
+    ],
     "blogs": {
       "djr20r64-xu1b": {
+        "bgImage": "https://img2.akspic.ru/crops/1/4/2/2/7/172241/172241-art-gaz-krug-tehnologii-elektrik-1280x720.jpg",
         "body": "Ученые обнаружили, что средняя температура тела здоровых людей снизилась почти на 0,6 градуса за последние 200 лет – с 37 градусов Цельсия до 36,4. А те, кто живет вдали от цивилизации, стали «холоднее» на половину градуса всего за последние 16 лет.",
         "id": "djr20r64-xu1b",
         "img": "blob:https://web.telegram.org/a62b86a8-620d-4689-8089-b6d80175108f",
-        "title": "Люди за последние 200 лет стали… холоднее",
-        "bgImage": "https://img2.akspic.ru/crops/1/4/2/2/7/172241/172241-art-gaz-krug-tehnologii-elektrik-1280x720.jpg"
+        "title": "Люди за последние 200 лет стали… холоднее"
       }
     },
     "favourite": false,
@@ -85,17 +171,46 @@
     ],
     "id": "05f8kh64-e8ch-1hf5-6386-3gbd7492650134dfgdfg",
     "img": "https://klike.net/uploads/posts/2022-07/1658295652_1.jpg",
-    "imgCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqqqLZE-H00eKWVu_S2XgazHYlbis_J0Pcyg&usqp=CAU",
+    "imgCover": "https://img2.akspic.ru/crops/0/6/4/1/7/171460/171460-android-tsvetnoy-tsvetok-purpur-lepestok-1920x1080.jpg",
     "isFriend": false,
     "isOnline": true,
     "name": "Oscar Adams",
     "photos": [
       {
-        "img": "https://myfreesoft.ru/wp-content/uploads/2018/12/camera-514992_1920-650x430.jpg"
+        "img": "https://img2.akspic.ru/crops/7/7/3/2/7/172377/172377-oblako-atmosfera-samolety-ekoregion-samolet-1366x768.jpg"
       }
-    ]
+    ],
+    "help": false
   },
   "12g9sg14-r8sh-5sd8-2963-2kds91652425": {
+    "about": [
+      {
+        "date": "06.03.1998",
+        "family": "",
+        "fullName": "Mia Jordan",
+        "mobilePhone": "+380952762847",
+        "placesOfResidence": [
+          {
+            "cityOfResidencce": "Kherson",
+            "homeTown": "Kherson"
+          }
+        ],
+        "sex": "Female",
+        "someInfo": [
+          {
+            "achievements": "",
+            "favoriteQuotes": "",
+            "mainInfo": ""
+          }
+        ],
+        "workAndEducation": [
+          {
+            "education": "Медичний університет",
+            "work": "Doctor"
+          }
+        ]
+      }
+    ],
     "blogs": {
       "sdf65d24-sd9g": {
         "bgImage": "https://img2.akspic.ru/crops/9/7/6/1/7/171679/171679-temnota-teatralnoe_iskusstvo-razvlechenie-sobytie-krug-1280x720.jpg",
@@ -117,17 +232,46 @@
     ],
     "id": "12g9sg14-r8sh-5sd8-2963-2kds91652425",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPiPWSkgdGdbus6zbWMLW-CiUttsA0BifTkQ&usqp=CAU",
-    "imgCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThiN8jDQ_CL0STnnUl_ABme4_h-Ep2V7ubIA&usqp=CAU",
-    "isFriend": false,
+    "imgCover": "https://img2.akspic.ru/crops/9/4/4/1/7/171449/171449-anime-tandzhiro_kamado-ubijca_demonov_kimetsu_no_yaiba-rukav-art-1920x1080.jpg",
+    "isFriend": true,
     "isOnline": false,
     "name": "Mia Jordan",
     "photos": [
       {
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmRiayn3Lc3ak-4PA94mVrpIhOCCa8pPcBHA&usqp=CAU"
+        "img": "https://img1.akspic.ru/crops/6/7/3/2/7/172376/172376-mac_os-josemitskij_nacionalnyj_park-polovina_kupola-el_kapitan-vesennij_vodopad-1366x768.jpg"
       }
-    ]
+    ],
+    "help": false
   },
   "26b6dj47-e5jg-5js8-1946-6shj10472458": {
+    "about": [
+      {
+        "date": "02.01.2001",
+        "family": "",
+        "fullName": "Alice Mills",
+        "mobilePhone": "+380948672847",
+        "placesOfResidence": [
+          {
+            "cityOfResidencce": "Chernihiv",
+            "homeTown": "Chernihiv"
+          }
+        ],
+        "sex": "Female",
+        "someInfo": [
+          {
+            "achievements": "",
+            "favoriteQuotes": "",
+            "mainInfo": ""
+          }
+        ],
+        "workAndEducation": [
+          {
+            "education": "Floristic University",
+            "work": "Florist"
+          }
+        ]
+      }
+    ],
     "blogs": {
       "sgr19b32-sy2b": {
         "bgImage": "https://img1.akspic.ru/crops/1/5/9/1/7/171951/171951-lofoten-vyzvat_dozhd-senya-municipalitet_troms-more-1280x720.jpg",
@@ -149,17 +293,46 @@
     ],
     "id": "26b6dj47-e5jg-5js8-1946-6shj10472458",
     "img": "https://mixmag.io/wp-content/pics/60375/image306-6.jpg",
-    "imgCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv23491WKorj6d7P1Nw7pn4tYRiHFqoIZ_vg&usqp=CAU",
-    "isFriend": false,
+    "imgCover": "https://img2.akspic.ru/crops/6/3/8/8/6/168836/168836-zolotistyj_retriver-labrador-kot-pudel-palto_dlya_sobak-1920x1080.jpg",
+    "isFriend": true,
     "isOnline": true,
     "name": "Alice Mills",
     "photos": [
       {
-        "img": "https://tripway.com/blog/wp-content/uploads/2016/01/951278_ee5e_625x10001.jpg"
+        "img": "https://img1.akspic.ru/crops/1/6/3/2/7/172361/172361-vysokogore-osen-gora-priroda-oblako-1366x768.jpg"
       }
-    ]
+    ],
+    "help": false
   },
   "63g8sg37-d4dh-1sj9-2686-6sjf19476523": {
+    "about": [
+      {
+        "date": "12.11.1999",
+        "family": "",
+        "fullName": "Connor Jackson",
+        "mobilePhone": "+380938167384",
+        "placesOfResidence": [
+          {
+            "cityOfResidencce": "Kharkiv",
+            "homeTown": "Kharkiv"
+          }
+        ],
+        "sex": "Male",
+        "someInfo": [
+          {
+            "achievements": "",
+            "favoriteQuotes": "",
+            "mainInfo": ""
+          }
+        ],
+        "workAndEducation": [
+          {
+            "education": "University of Journalism",
+            "work": "Journalist"
+          }
+        ]
+      }
+    ],
     "blogs": {
       "aur19h38-vg2k": {
         "bgImage": "https://img3.akspic.ru/crops/9/3/2/2/7/172239/172239-sportkar-fara-legkovyye_avtomobili-bmw-bmw_m3-1280x720.jpg",
@@ -181,17 +354,46 @@
     ],
     "id": "63g8sg37-d4dh-1sj9-2686-6sjf19476523",
     "img": "https://cs9.pikabu.ru/post_img/big/2020/01/20/9/1579533577179156992.jpg",
-    "imgCover": "https://proexpress.com.ua/wp-content/uploads/2019/11/kartinki-na-avu-dlya-patcanov-bez-litca.jpg",
+    "imgCover": "https://img1.akspic.ru/crops/2/1/8/7/3/137812/137812-televideniye-illustracia-nebo-multik-fikciya-1920x1080.jpg",
     "isFriend": false,
     "isOnline": false,
     "name": "Connor Jackson",
     "photos": [
       {
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1luG-1ltVJ9nGwFOO5WQuc6b_1oOfoopoaw&usqp=CAU"
+        "img": "https://img2.akspic.ru/crops/0/6/3/2/7/172360/172360-anime-moet_oboi-hashibira_inoske-nezuko_kamado-tandzhiro_kamado-1366x768.jpg"
       }
-    ]
+    ],
+    "help": false
   },
   "72j3sj73-s4jd-1sh7-2463-5shd12084527": {
+    "about": [
+      {
+        "date": "19.04.2001",
+        "family": "",
+        "fullName": "Leo Gibson",
+        "mobilePhone": "+380982956137",
+        "placesOfResidence": [
+          {
+            "cityOfResidencce": "Chernivtsi",
+            "homeTown": "Chernivtsi"
+          }
+        ],
+        "sex": "Male",
+        "someInfo": [
+          {
+            "achievements": "",
+            "favoriteQuotes": "",
+            "mainInfo": ""
+          }
+        ],
+        "workAndEducation": [
+          {
+            "education": "Engineering University",
+            "work": "Engineer"
+          }
+        ]
+      }
+    ],
     "blogs": {
       "srh34h25-sy4b": {
         "bgImage": "https://img2.akspic.ru/crops/0/7/2/2/7/172270/172270-esteticheskij_oduvanchik_v_ogne-ogon-zhidkiy-rastenie-gaz-1280x720.jpg",
@@ -213,17 +415,46 @@
     ],
     "id": "72j3sj73-s4jd-1sh7-2463-5shd12084527",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj5gporE1r-0DqoUCErWY--EgxHameLccgQ&usqp=CAU",
-    "imgCover": "https://kartinkin.net/uploads/posts/2022-03/1646233143_1-kartinkin-net-p-grustnie-kartinki-na-avu-dlya-patsanov-1.jpg",
-    "isFriend": false,
+    "imgCover": "https://img2.akspic.ru/crops/7/0/4/1/7/171407/171407-porsche_911_gt3_rs_996-porsche_911_gt2-porshe-legkovyye_avtomobili-porsche_911_gt3_rsr-1920x1080.jpg",
+    "isFriend": true,
     "isOnline": true,
     "name": "Leo Gibson",
     "photos": [
       {
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMV6OSLUCloZaRneolLz6Ldb056xCpeekffA&usqp=CAU"
+        "img": "https://img1.akspic.ru/crops/6/2/3/2/7/172326/172326-anime_art-estetika-oblako-atmosfera-rastenie-1366x768.jpg"
       }
-    ]
+    ],
+    "help": false
   },
   "95j1kt37-j7sh-4sg7-1562-6djf18451957": {
+    "about": [
+      {
+        "date": "09.05.2000",
+        "family": "",
+        "fullName": "Jessica Martin",
+        "mobilePhone": "+380972947164",
+        "placesOfResidence": [
+          {
+            "cityOfResidencce": "Mykolaiv",
+            "homeTown": "Mykolaiv"
+          }
+        ],
+        "sex": "Female",
+        "someInfo": [
+          {
+            "achievements": "",
+            "favoriteQuotes": "",
+            "mainInfo": ""
+          }
+        ],
+        "workAndEducation": [
+          {
+            "education": "University of Journalism",
+            "work": "Journalist"
+          }
+        ]
+      }
+    ],
     "blogs": {
       "jws16j32-lh5h": {
         "bgImage": "https://img2.akspic.ru/crops/0/7/8/1/3/131870/131870-dym-temnota-osveshhenie-plamya-fonar-1280x720.jpg",
@@ -245,14 +476,15 @@
     ],
     "id": "95j1kt37-j7sh-4sg7-1562-6djf18451957",
     "img": "https://linedot.ru/wp-content/uploads/2019/10/34.jpg",
-    "imgCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBTDmb4y8K14ZtfM-XJgJlIXfJQjKD72Gbw&usqp=CAU",
-    "isFriend": false,
+    "imgCover": "https://img1.akspic.ru/crops/3/0/4/1/7/171403/171403-anime-genshin_impakt_chzhunli-genshin_udar-chzhunli-keya-1920x1080.jpg",
+    "isFriend": true,
     "isOnline": true,
     "name": "Jessica Martin",
     "photos": [
       {
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmRiayn3Lc3ak-4PA94mVrpIhOCCa8pPcBHA&usqp=CAU"
+        "img": "https://img2.akspic.ru/crops/0/3/3/2/7/172330/172330-stena-android-oneplus_6-etazh-mozaika-1366x768.jpg"
       }
-    ]
+    ],
+    "help": false
   }
 }

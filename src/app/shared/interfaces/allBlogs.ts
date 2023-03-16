@@ -1,3 +1,5 @@
+import {About} from "./contacts";
+
 export interface BLogs {
   img: string
   title: string
@@ -23,4 +25,6 @@ export interface People{
   favourite: boolean
   friends: People[]
   photos: Photos[]
+  about: About[]
+  help: boolean
 }

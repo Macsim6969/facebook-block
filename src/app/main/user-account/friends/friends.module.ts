@@ -33,7 +33,8 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule
   ],
-  exports: [],
+  exports: [
+  ],
   providers: [UserService]
 })
 

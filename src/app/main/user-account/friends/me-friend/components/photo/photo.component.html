@@ -1,0 +1,27 @@
+<div class="all_photo">
+  <div *ngIf="showImage;else staticImage" class="photos_inner">
+    <img src="{{showImage}}" alt="">
+    <div class="photo_inner_menu" (click)="showMoreInfo()">
+      <img src="./assets/menu.png" alt="Menu">
+    </div>
+    <div class="photo_inner_menu_dop" *ngIf="showMore">
+      <nav class="dop_navbar"><a href="{{showImage}}" [download]="showImage">Donwload</a></nav>
+    </div>
+  </div>
+  <ng-template #staticImage>
+    <div class="photo_inner_basic">
+      Click some your image
+    </div>
+  </ng-template>
+  <div class="photos" *ngIf="photos.length;else loading">
+    <nav class="photos_blocs" *ngFor="let photo of photos">
+      <img [src]="photo.img" (click)="showImg(photo.img)">
+    </nav>
+  </div>
+  <ng-template #loading>
+    <img class="loading" src="./assets/spinner.gif" alt="loading">
+  </ng-template>
+</div>
+
+
+
