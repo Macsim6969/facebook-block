@@ -1,0 +1,22 @@
+<div class="home">
+  <h4 class="home_title">Favourite blogs that you read</h4>
+  <div class="home_blog" *ngIf="blogs.length;else blogg">
+    <div class="home_blog_content" *ngFor="let bl of blogs">
+      <div class="home_blog_content_header">
+        <div class="home_blog_content_header_top">
+          <h1>{{bl.title}}</h1>
+          <img class="home_blog_content_header_top_img" (click)="remove(bl)" src="./assets/love_active.png" alt="love">
+        </div>
+        <img class="home_blog_content_header_img" width="80" src="{{bl.img}}" alt="">
+        <p class="home_blog_content_header_txt">{{bl.body}}</p>
+      </div>
+      <div (click)="read(bl.id)" class="home_blog_content_btn">Read more...</div>
+    </div>
+  </div>
+  <ng-template #blogg>
+    <div class="blog_clear">
+      <h5 class="blog_clear_title">In this blog you can see you favourite block that you read and like</h5>
+      <p class="blog_clear_info" [routerLink]="['/blogs']">To start reading some blocks, see here</p>
+    </div>
+  </ng-template>
+</div>

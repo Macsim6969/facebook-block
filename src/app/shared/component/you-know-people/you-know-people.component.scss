@@ -12,6 +12,11 @@
     justify-content: space-between;
     padding-bottom: 20px;
     align-items: center;
+    p{
+      font-size: 1.5rem;
+      font-weight: 600;
+
+    }
     &_setting{
       display: flex;
       flex-direction: column;
@@ -44,18 +49,12 @@
   }
   &_inner{
     justify-content: space-between;
-    overflow-x: scroll;
+    overflow-x: auto;
     display: flex;
     flex-direction: row;
     &_content{
       padding: 0 15px;
     }
-  }
-  .loading{
-    z-index: -5;
-    position: absolute;
-    left: 45%;
-    top: 30.5%;
   }
   &_inner::-webkit-scrollbar {
     width: 10px;
@@ -73,8 +72,14 @@
   &_inner::-webkit-scrollbar-thumb:hover {
     background: #7c7b7b;
   }
-}
 
+}
+.loading{
+  z-index: -5;
+  position: absolute;
+  left: 45%;
+  top: 30.5%;
+}
 .block_set{
   position: fixed;
   bottom: 3%;

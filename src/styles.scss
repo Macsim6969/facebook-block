@@ -36,13 +36,18 @@ app-edit{
   left: 0;
   background-color: rgba(255,255,255,0.8);
 }
-//app-about{
-//  width: 75%;
-//  margin: 0 auto;
-//  display: flex;
-//  align-items: center;
-//  justify-content: center;
+
+app-main-home{
+  width: 50%;
+}
 
 img{
   object-fit: cover;
+}
+
+.loading{
+  position: absolute;
+  z-index: -5;
+  top: 250px;
+  left: 45%;
 }

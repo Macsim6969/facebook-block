@@ -6,7 +6,6 @@ import {PublicationComponent} from "./publication/publication.component";
 import { AboutComponent } from './about/about.component';
 import { FriendsComponent } from './friends/friends.component';
 import { PhotosComponent } from './photos/photos.component';
-import { MusicComponent } from './music/music.component';
 import { MeBlogComponent } from './publication/me-blog/me-blog.component';
 import {YouKnowPeopleComponent} from "../../shared/component/you-know-people/you-know-people.component";
 import { EditComponent } from './edit/edit.component';
@@ -24,7 +23,6 @@ const routes: Routes = [
           {path: '', loadChildren: () => import('./friends/friends.module').then(m => m.FriendsModule)}
         ]},
       {path: 'photos', component: PhotosComponent},
-      {path: 'music', component: MusicComponent},
       {path: 'edit', component: EditComponent}
     ]}
 ]
@@ -35,7 +33,6 @@ const routes: Routes = [
     AboutComponent,
     FriendsComponent,
     PhotosComponent,
-    MusicComponent,
     MeBlogComponent,
     YouKnowPeopleComponent,
     EditComponent,

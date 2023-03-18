@@ -25,4 +25,26 @@ export class BlogInfoComponent implements OnInit {
           this.loading = false
     })
   }
+
+  love(blog: BLogs){
+    const newBlog = {
+      ...blog,
+      favourite: true
+    }
+
+    this.blogService.changeBlogInfo(newBlog).subscribe( res =>{
+      this.ngOnInit()
+    })
+  }
+
+  removeLove(blog: BLogs) {
+    const newBlog = {
+      ...blog,
+      favourite: false
+    }
+
+    this.blogService.changeBlogInfo(newBlog).subscribe( res =>{
+      this.ngOnInit()
+    })
+  }
 }

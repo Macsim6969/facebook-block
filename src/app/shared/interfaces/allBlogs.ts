@@ -5,7 +5,8 @@ export interface BLogs {
   title: string
   id : string | number
   body: string
-  bgImage?: string
+  bgImage: string
+  favourite? : boolean
 }
 
 export interface Photos {

@@ -1,11 +1,11 @@
 <div class="blog" *ngIf="blogs.length; else loading">
-  <div class="blog_inner" *ngFor="let blog of blogs">
-    <div class="blog_inner_data">
-      <h1 class="blog_inner_log">{{blog.title}}</h1>
-      <small>15.02.2023</small>
+  <div class="blog_inner">
+    <div *ngFor="let blog of blogs">
+      <div class="blog_id" style="background-size: cover; background: url({{blog.bgImage}})">
+        <h1 class="blog_id_title">{{blog.title}}</h1>
+        <nav  class="blog_id_more" [routerLink]="['/blogs', 'content', blog.id]">Read more</nav>
+      </div>
     </div>
-
-    <a [routerLink]="['/blogs', 'content', blog.id]" class="blog_link">Read more</a>
   </div>
 </div>
 

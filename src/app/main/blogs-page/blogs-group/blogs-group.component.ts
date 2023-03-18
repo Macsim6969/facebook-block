@@ -14,7 +14,7 @@ export class BlogsGroupComponent implements OnInit{
   ngOnInit() {
     this.blogService.getBLogs()
       .subscribe( res =>{
-        this.blogs = res
+        this.blogs = Object.values(res)
       })
   }
 }

@@ -12,11 +12,13 @@ import {Subscription} from "rxjs";
 export class MainComponent implements OnInit, OnDestroy{
   users: Users
   Smain: Subscription
-  constructor(private mainService: MainService) {}
+  constructor(private mainService: MainService, private route: Router) {}
   ngOnInit() {
    this.Smain =  this.mainService.getInfo().subscribe(res =>{
       this.users = res
     })
+
+    this.route.navigate(['/home'])
   }
 
   ngOnDestroy() {

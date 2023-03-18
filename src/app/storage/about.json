@@ -1,0 +1,28 @@
+[
+  {
+    "date": "14.05.2003",
+    "family": "Unset",
+    "fullName": "Maxim Belousov",
+    "mobilePhone": "+380999999999",
+    "placesOfResidence": [
+      {
+        "cityOfResidencce": "Kyiv",
+        "homeTown": "Krc"
+      }
+    ],
+    "sex": "Male",
+    "someInfo": [
+      {
+        "achievements": "",
+        "favoriteQuotes": "",
+        "mainInfo": ""
+      }
+    ],
+    "workAndEducation": [
+      {
+        "education": "DUT",
+        "work": "Junior Front-End Developer"
+      }
+    ]
+  }
+]

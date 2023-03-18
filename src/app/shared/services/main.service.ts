@@ -6,6 +6,7 @@ import {Users} from "../interfaces/contacts";
 @Injectable({providedIn: 'root'})
 
 export class MainService{
+  users: Users
   constructor(private http: HttpClient) {}
 
   getInfo(): Observable<Users>{

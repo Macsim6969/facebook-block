@@ -8,7 +8,6 @@ import {PhotosBlockComponent} from './photos-block/photos-block.component';
 import {PeopleBlockComponent} from './people-block/people-block.component';
 import {ImageBlockComponent} from './share/component/image-block/image-block.component';
 import { BlogInfoComponent } from './share/component/blog-info/blog-info.component';
-import { MusicComponent } from './music/music.component';
 
 const routes: Routes = [
   {
@@ -16,8 +15,7 @@ const routes: Routes = [
       {path: 'content', component: BlogsGroupComponent},
       {path: 'content/:id', component: BlogInfoComponent},
       {path: 'photos', component: PhotosBlockComponent},
-      {path: 'people', component: PeopleBlockComponent},
-      {path: 'music', component: MusicComponent}
+      {path: 'people', component: PeopleBlockComponent}
     ]
   }
 ]
@@ -29,8 +27,7 @@ const routes: Routes = [
     PhotosBlockComponent,
     PeopleBlockComponent,
     ImageBlockComponent,
-    BlogInfoComponent,
-    MusicComponent
+    BlogInfoComponent
   ],
   imports: [
     CommonModule,

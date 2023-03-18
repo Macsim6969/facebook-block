@@ -1,16 +1,23 @@
-<div class="blog_info" *ngIf="blog; else loading">
-  <div [routerLink]="['/blogs', 'content']">Back</div>
-  <div class="blog_info_inner">
-    <div class="blog_info_inner_main">
-      <h1>{{blog.title |titlecase}}</h1>
-      <span>01.31.2022</span>
+<div class="blog_content">
+  <div class="blog_content_inner">
+    <div class="blog_content_inner_header">
+      <nav class="blog_content_inner_header_image">
+      <img src="{{blog.bgImage}}">
+      </nav>
+      <div class="blog_content_inner_header_loft">
+        <nav class="blog_content_inner_header_back" [routerLink]="['/blogs', 'content']">&#8592; Back</nav>
+        <div *ngIf="blog.favourite == false;else loveActive"><img style="cursor: pointer" (click)="love(blog)" width="38" src="./assets/love.png" alt="Love"></div>
+        <ng-template #loveActive>
+          <img (click)="removeLove(blog)" style="cursor: pointer" width="38" src="./assets/love_active.png" alt="Love">
+        </ng-template>
+      </div>
     </div>
-    <div>
-      {{blog.body | titlecase}}
+    <div class="blog_content_inner_main">
+      <h3 class="blog_content_inner_main_title">{{blog.title}}</h3>
+      <nav>
+        <img src="{{blog.img}}" alt="">
+      </nav>
+      <nav>{{blog.body}}</nav>
     </div>
   </div>
 </div>
-
-<ng-template #loading>
-  <img class="loading" src="./assets/spinner.gif" alt="loading">
-</ng-template>

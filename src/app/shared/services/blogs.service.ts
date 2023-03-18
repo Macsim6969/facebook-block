@@ -17,6 +17,10 @@ export class BlogsService implements OnInit {
     return this.http.get<BLogs[]>('https://facebook-d95ea-default-rtdb.firebaseio.com/blogs.json')
   }
 
+  changeBlogInfo(blog: BLogs): Observable<BLogs>{
+    return this.http.patch<BLogs>(`https://facebook-d95ea-default-rtdb.firebaseio.com/blogs/${blog.id}.json`, blog)
+  }
+
   getById(id: number): Observable<BLogs> {
     return this.http.get<BLogs>(`https://facebook-d95ea-default-rtdb.firebaseio.com/blogs/${id}.json`)
       .pipe(

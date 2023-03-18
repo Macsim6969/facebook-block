@@ -30,7 +30,7 @@
         <nav class="edit_inner_main_photo_change" (click)="showSettAbout = true">Change</nav>
       </div>
       <div *ngIf="!showSettAbout" class="edit_inner_main_about">
-        <div *ngFor="let about of user.about">
+        <div *ngFor="let about of user.about" class="edit_inner_main_about_info">
           <nav>Full Name: {{about.fullName}}</nav>
           <nav>Birthday: {{about.date}}</nav>
           <nav>Mobile Phone: {{about.mobilePhone}}</nav>
@@ -38,19 +38,17 @@
         </div>
       </div>
       <div *ngIf="showSettAbout" class="edit_inner_main_about">
-        <div>
-          <div (click)="showSettAbout = false">Close</div>
+        <div class="edit_inner_main_about_change">
+          <div class="edit_inner_main_about_change_close" (click)="showSettAbout = false">&#10006;</div>
           <nav>Full Name: <input type="text" [(ngModel)]="fullName"></nav>
           <nav>Birthday: <input type="number" [(ngModel)]="birthday"></nav>
           <nav>Mobile Phone: <input type="number" [(ngModel)]="mobilePhone"></nav>
           <nav>Sex: <input type="text" [(ngModel)]="sex"></nav>
         </div>
       </div>
-      <div (click)="save()">
-        Save
-      </div>
-      <div [routerLink]="['/user']">
-        Compleate
+      <div class="loft">
+        <div (click)="save()" class="loft_save">Save</div>
+        <div [routerLink]="['/user']" class="loft_compleate">Compleate</div>
       </div>
     </div>
   </div>
