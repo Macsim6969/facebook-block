@@ -1,27 +1,56 @@
-div{
+div {
   background-color: #f3f3f3;
+
   .login {
     max-width: 1120px;
     margin: 0 auto;
 
     .login_inner {
+      padding: 0 15px;
       height: 100vh;
       display: flex;
       flex-direction: row;
       align-items: center;
+      @media (max-width: 920px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
 
       .login_inner_lf {
         flex-basis: 50%;
-        .login_inner_lf_log{
+        @media (max-width: 920px) {
+          flex-basis: unset;
+          width: 60%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        @media (max-width: 560px) {
+          width: 100%;
+        }
+        .login_inner_lf_log {
           font-size: 1.8rem;
         }
-        .login_inner_lf_text{
+
+        .login_inner_lf_text {
           font-size: 1.2rem;
+          @media (max-width: 920px) {
+            text-align: center;
+          }
         }
       }
 
       .login_inner_rg {
         flex-basis: 50%;
+        @media (max-width: 920px) {
+          margin-top: 50px;
+          flex-basis: unset;
+          width: 70%;
+        }
+        @media (max-width: 560px) {
+          width: 100%;
+        }
       }
     }
   }

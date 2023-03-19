@@ -35,6 +35,12 @@
       padding: 10px;
       border-radius: 20px;
       background-color: #e5e5e5;
+      @media (max-width: 920px) {
+        right: 10%;
+      }
+      @media (max-width: 575px) {
+        right: 20%;
+      }
       img{
         width: 28px;
         height: auto;

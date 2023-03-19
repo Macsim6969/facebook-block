@@ -15,6 +15,9 @@
     .user_inner_head {
       width: 77%;
       margin: 0 auto;
+      @media (max-width: 770px) {
+        width: 100%;
+      }
       .head_img {
         position: relative;
         max-width: 1280px;
@@ -29,7 +32,14 @@
         position: absolute;
         bottom: -18%;
         left: 43%;
-
+        @media (max-width: 560px) {
+          bottom: -10%;
+          left: 31%;
+        }
+        @media (max-width: 375px) {
+          bottom: -10%;
+          left: 20%;
+        }
         img {
           width: 170px;
           height: 170px;
@@ -45,10 +55,13 @@
           background-color: black;
           color: white;
           font-size: 1.3rem ;
-          width: 8%;
+          width: 20%;
           cursor: pointer;
           border: 1px solid white;
           padding: 8px;
+          @media (max-width: 575px) {
+            width: 37%;
+          }
         }
         .user_info_back:hover{
           background-color: white;
@@ -59,6 +72,9 @@
         .user_info_txt {
           font-weight: 600;
           font-size: 1.3rem;
+          @media (max-width: 560px) {
+            font-size: 1.1rem;
+          }
         }
 
         .user_info_inner {
@@ -68,7 +84,11 @@
           align-items: center;
           .user_info_friend {
             cursor: pointer;
-
+            .user_info_friend_inner{
+              @media (max-width: 560px) {
+                font-size: 0.85rem;
+              }
+            }
             .user_info_friend_sircle {
               display: flex;
               flex-direction: row;
@@ -94,9 +114,19 @@
         flex-direction: row;
         justify-content: space-between;
         width: 60%;
+        @media (max-width: 560px) {
+          width: 100%;
+        }
+        @media (max-width: 375px) {
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
         .user_navbar_inner{
           cursor: pointer;
           padding: 7px;
+          @media (max-width: 560px) {
+            font-size: 0.8rem;
+          }
         }
         .user_navbar_inner:hover{
           background-color: #8a8989;

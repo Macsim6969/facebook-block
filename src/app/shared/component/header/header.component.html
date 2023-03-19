@@ -1,9 +1,9 @@
 <div class="header">
-  <nav class="header_logo" [routerLink]="['/home']">
+  <nav class="header_logo" [routerLink]="['/']">
     <img src="./assets/facebook-black.png" alt="facebook">
   </nav>
   <div class="header_navbar">
-    <nav routerLinkActive="active" [routerLink]="['/home']" [routerLinkActiveOptions]="{exact: true}">
+    <nav routerLinkActive="active" [routerLink]="['/']" [routerLinkActiveOptions]="{exact: true}">
       <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt" fill="currentColor" height="28"
            width="28">
         <path
@@ -18,9 +18,13 @@
     </nav>
   </div>
   <div class="header_login">
-    <nav class="header_login_inner" (click)="logout()">
+    <nav class="header_login_inner" (click)="showLog()">
       <img *ngIf="!userinfo" src="./assets/avatar.png" alt="avatar">
       <img *ngIf="userinfo" [src]="userinfo.img" alt="avatar">
     </nav>
+    <div class="header_login_dop" *ngIf="show">
+      <nav class="header_login_dop_sett" [routerLink]="['/setting']">Settings</nav>
+      <nav class="header_login_dop_log" (click)="logout()">Logout</nav>
+    </div>
   </div>
 </div>

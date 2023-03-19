@@ -39,6 +39,17 @@ app-edit{
 
 app-main-home{
   width: 50%;
+  @media (max-width: 1100px) {
+    width: 62%;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 0 15px;
+  }
+  @media (max-width: 560px) {
+    width: 93%;
+    padding: 0;
+  }
 }
 
 img{

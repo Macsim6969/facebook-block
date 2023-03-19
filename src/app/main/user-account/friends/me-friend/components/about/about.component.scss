@@ -1,31 +1,49 @@
-.about_me{
+.about_me {
   display: flex;
-  width: 75%;
   flex-direction: column;
-  margin: 0 auto 50px auto;
-  &_title{
+  margin: 0 0 50px 0;
+
+  &_title {
     font-size: 1.6rem;
   }
-  &_inner{
+
+  &_inner {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     border-radius: 5px;
-    &_left{
+
+    &_left {
       padding-bottom: 15px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       border-bottom: 1px solid #a6a0a0;
-      &_inner{
+
+      &_inner {
         display: flex;
         flex-basis: 25%;
         padding: 15px 0 0 15px;
+        @media (max-width: 770px) {
+          flex-basis: 30%;
+        }
+        @media (max-width: 575px) {
+          font-size: 0.8rem;
+        }
       }
-      .about_me_inner_right{
+
+      .about_me_inner_right {
         flex-direction: column;
         display: flex;
         flex-basis: 70%;
+        @media (max-width: 770px) {
+          flex-basis: 60%;
+        }
+        @media (max-width: 575px) {
+          nav {
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }

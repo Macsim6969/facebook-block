@@ -23,7 +23,13 @@
         position: absolute;
         bottom: -18%;
         left: 43%;
-
+        @media (max-width: 575px) {
+          left: 32%;
+        }
+        @media (max-width: 375px) {
+          left: 20%;
+          bottom: -7%;
+        }
         img {
           width: 180px;
           height: 180px;
@@ -39,6 +45,9 @@
         .user_info_txt {
           font-weight: 600;
           font-size: 1.3rem;
+          @media (max-width: 575px) {
+            font-size: 1rem;
+          }
         }
 
         .user_info_inner {
@@ -47,6 +56,9 @@
           justify-content: space-between;
           align-items: center;
           .user_info_friend {
+            &_inner{
+              font-size: 0.8rem;
+            }
             cursor: pointer;
             .user_info_friend_sircle {
               display: flex;
@@ -84,10 +96,21 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 60%;
+        width: 65%;
+        @media (max-width: 720px) {
+          width: 100%;
+        }
+        @media (max-width: 575px) {
+          flex-wrap: wrap;
+          justify-content: left;
+        }
         .user_navbar_inner{
           cursor: pointer;
           padding: 7px;
+          @media (max-width: 575px) {
+            font-size: 0.8rem;
+            margin:0 10px;
+          }
         }
         .user_navbar_inner:hover{
           background-color: #8a8989;

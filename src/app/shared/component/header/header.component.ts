@@ -8,6 +8,7 @@ import {Users} from "../../interfaces/contacts";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  show: boolean = false
   @Input() userinfo: Users
   constructor(private loginService: LogService) {}
 
@@ -17,4 +18,7 @@ export class HeaderComponent implements OnInit {
     this.loginService.logout()
   }
 
+  showLog() {
+    this.show = !this.show
+  }
 }

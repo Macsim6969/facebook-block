@@ -17,8 +17,6 @@ export class MainComponent implements OnInit, OnDestroy{
    this.Smain =  this.mainService.getInfo().subscribe(res =>{
       this.users = res
     })
-
-    this.route.navigate(['/home'])
   }
 
   ngOnDestroy() {

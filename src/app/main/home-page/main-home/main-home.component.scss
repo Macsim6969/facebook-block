@@ -5,6 +5,9 @@
   &_title{
     font-size: 1.8rem;
     font-weight: 600;
+    @media (max-width: 560px) {
+      font-size: 1.2rem;
+    }
   }
   &_blog{
     margin-top: 25px;
@@ -28,6 +31,9 @@
             font-size: 1.2rem;
             font-weight: 600;
             font-style: italic;
+            @media (max-width: 560px) {
+              font-size: 1rem;
+            }
           }
           &_img{
             cursor: pointer;
@@ -44,6 +50,9 @@
           -webkit-line-clamp: 10;
           -webkit-box-orient: vertical;
           overflow: hidden;
+          @media (max-width: 560px) {
+            font-size: 0.85rem;
+          }
         }
       }
       &_btn{
@@ -54,6 +63,10 @@
         border-radius: 10px;
         background: #8a8989;
         cursor: pointer;
+        @media (max-width: 560px) {
+          width: unset;
+          text-align: center;
+        }
       }
       &_btn:hover{
         background: #000000;

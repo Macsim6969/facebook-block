@@ -16,3 +16,18 @@
     <span>Groups</span>
   </nav>
 </div>
+
+<div class="auth-info-mobile">
+  <nav [routerLink]="['/user']" *ngIf="user" class="auth-info-me">
+    <img [src]="user.img" alt="Me">
+  </nav>
+  <nav *ngIf="!user" class="auth-info-me">
+    <img src="./assets/avatar.png" alt="Me">
+  </nav>
+  <nav (click)="routerToFriend()" class="auth-info-me">
+    <img src="./assets/friends.png" alt="Me">
+  </nav>
+  <nav [routerLink]="['/blogs']" class="auth-info-me">
+    <img src="./assets/multiple-users-silhouette.png" alt="Me">
+  </nav>
+</div>

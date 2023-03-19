@@ -36,6 +36,9 @@
     margin-bottom: 20px;
     border-radius: 15px;
     position: relative;
+    @media (max-width: 575px) {
+      flex-basis: 95%;
+    }
     .people_inner_info {
       display: flex;
       flex-direction: row;

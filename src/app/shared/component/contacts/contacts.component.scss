@@ -23,15 +23,15 @@
   }
   .contacts{
     margin-top: 15px;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 80vh;
     .contact{
       width: 100%;
       position: relative;
       .contact_inner{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         cursor: pointer;
-        padding: 10px 0;
+        padding: 3px 0;
         display: flex;
         flex-direction: row;
 

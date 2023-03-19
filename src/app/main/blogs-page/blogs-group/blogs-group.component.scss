@@ -3,6 +3,12 @@
   flex-direction: column;
   width: 75%;
   margin: 0 auto;
+  @media (max-width: 920px) {
+    width: 95%;
+  }
+  @media (max-width: 475px) {
+    width: 100%;
+  }
   .blog_id{
     width: 100%;
     height: 220px;
@@ -17,6 +23,10 @@
     &_title{
       font-weight: bold;
       font-size: 1.2rem;
+      @media (max-width: 475px) {
+        font-size: 1rem;
+        text-align: center;
+      }
     }
     &_more{
       opacity: 0;

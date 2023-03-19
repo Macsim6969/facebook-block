@@ -1,15 +1,19 @@
 <div class="blog_content">
   <div class="blog_content_inner">
     <div class="blog_content_inner_header">
-      <img src="{{blog.bgImage}}">
-      <nav class="blog_content_inner_header_back" (click)="removeHidden()" [routerLink]="['/user', 'my-blog']">&#8592; Back</nav>
+      <nav class="blog_content_inner_header_image">
+        <img src="{{blog.bgImage}}">
+      </nav>
+      <div class="blog_content_inner_header_loft">
+        <nav class="blog_content_inner_header_back" [routerLink]="['/user', 'my-blog']">&#8592; Back</nav>
+      </div>
     </div>
     <div class="blog_content_inner_main">
       <h3 class="blog_content_inner_main_title">{{blog.title}}</h3>
-      <nav>
+      <nav class="blog_content_inner_main_image">
         <img src="{{blog.img}}" alt="">
       </nav>
-      <nav>{{blog.body}}</nav>
+      <nav class="blog_content_inner_main_txt"> {{blog.body}}</nav>
     </div>
   </div>
 </div>

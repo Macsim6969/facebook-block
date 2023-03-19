@@ -10,13 +10,24 @@
     justify-content: space-between;
     flex-basis: 320px;
     flex-wrap: wrap;
+    @media (max-width: 475px) {
+      justify-content: left;
+    }
     .people_name{
       font-size: 1.2rem;
+      @media (max-width: 475px) {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
     }
     .people_image{
       position: relative;
       width: 60px;
       height: 60px;
+      @media (max-width: 475px) {
+        width: 48px;
+        height: 48px;
+      }
       .people_img{
         width: 100%;
         height: 100%;
