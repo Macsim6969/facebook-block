@@ -10,6 +10,6 @@ export class ErrorPageComponent {
 constructor(private router: Router) {
 }
   toHome() {
-    this.router.navigate(['/home'])
+    this.router.navigate(['/'])
   }
 }
